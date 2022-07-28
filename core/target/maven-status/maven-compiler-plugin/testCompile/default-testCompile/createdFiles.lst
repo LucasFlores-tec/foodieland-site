@@ -1,0 +1,7 @@
+com\foodieland\core\listeners\SimpleResourceListenerTest.class
+com\foodieland\core\testcontext\AppAemContext.class
+com\foodieland\core\models\HelloWorldModelTest.class
+com\foodieland\core\filters\LoggingFilterTest.class
+com\foodieland\core\testcontext\AppAemContext$1.class
+com\foodieland\core\servlets\SimpleServletTest.class
+com\foodieland\core\schedulers\SimpleScheduledTaskTest.class

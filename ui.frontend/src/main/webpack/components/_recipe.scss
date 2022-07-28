@@ -1,0 +1,13 @@
+.cmp-recipe {
+	display: flex;
+}
+.cmp-recipe__image {
+	margin-left: 10px;
+	width: 660px;
+	height: 440px;
+	/* This class targets a Core Component Image CSS class */
+	.cmp-image__image {
+		width: 660px;
+		height: 440px;
+	}
+}

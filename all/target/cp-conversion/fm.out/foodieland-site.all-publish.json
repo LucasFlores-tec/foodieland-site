@@ -1,0 +1,12 @@
+{
+  "id":"com.foodieland:foodieland-site.all:slingosgifeature:publish:0.0.1-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/foodieland/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"com.foodieland:foodieland-site.all:0.0.1-SNAPSHOT|com.foodieland:foodieland-site.ui.config:0.0.1-SNAPSHOT"
+    }
+  }
+}

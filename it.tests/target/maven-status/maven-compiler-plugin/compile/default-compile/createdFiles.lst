@@ -1,0 +1,4 @@
+com\foodieland\it\tests\CreatePageIT.class
+com\foodieland\it\tests\HtmlUnitClient.class
+com\foodieland\it\tests\GetPageIT.class
+com\foodieland\it\tests\PublishPageValidationIT.class
