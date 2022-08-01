@@ -2,14 +2,13 @@
 	data-sly-use.category="com.foodieland.core.models.Category"
 	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
 	data-sly-test.hasContent="${!category.empty}">
-
+	
+	<div class="cmp-category__image">
+		<div class="cmp-category__image-category" data-sly-include="image.html"></div>
+	</div>
+	
 	<div class="cmp-category__name">
 		<h4 class="cmp-category__name-category">${category.name}</h4>
 	</div>
-	
-	<div class="cmp-category__image">
-		<div class="cmp-category__image-category" data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v3/image' }"></div>
-	</div>
-	
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=hasContent}"></sly>

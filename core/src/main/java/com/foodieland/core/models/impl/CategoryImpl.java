@@ -52,8 +52,7 @@ public class CategoryImpl implements Category {
 	public boolean isEmpty() {
 		final Image componentImage = getImage();
 		
-		if(StringUtils.isBlank(name)
-				|| componentImage == null
+		if(componentImage == null
 				|| StringUtils.isBlank(componentImage.getSrc())) {
 			
 			return true;

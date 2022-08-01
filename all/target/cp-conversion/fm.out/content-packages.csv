@@ -1,4 +1,4 @@
-# File created on Wed Jul 27 12:42:58 GFT 2022 by the Apache Sling Content Package to Sling Feature converter
+# File created on Mon Aug 01 12:15:32 GFT 2022 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\all\target\foodieland-site.all-0.0.1-SNAPSHOT.zip,com.foodieland:foodieland-site.all:0.0.1-SNAPSHOT,CONTAINER,,,
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\all\target\foodieland-site.all-0.0.1-SNAPSHOT.zip,com.foodieland:foodieland-site.ui.apps:0.0.1-SNAPSHOT,APPLICATION,com.foodieland:foodieland-site.all:0.0.1-SNAPSHOT,/jcr_root/apps/foodieland-packages/application/install/foodieland-site.ui.apps-0.0.1-SNAPSHOT.zip,C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\all\target\foodieland-site.all-0.0.1-SNAPSHOT.zip!/jcr_root/apps/foodieland-packages/application/install/foodieland-site.ui.apps-0.0.1-SNAPSHOT.zip
