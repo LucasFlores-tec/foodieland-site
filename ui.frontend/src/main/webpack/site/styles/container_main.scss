@@ -3,5 +3,8 @@
 
 main.container {
     padding: .5em 1em;
-    background-color: white;
+    max-width: $max-content-width;
+    float: unset!important;
+    margin: 0 auto!important;
+    clear: both!important;
 }

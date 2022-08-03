@@ -9,6 +9,7 @@ Content-Package-Id: com.foodieland:foodieland-site.ui.apps:0.0.1-SNAPSHO
 Content-Package-Description: UI apps package for Foodieland Site
 Content-Package-Roots: /apps/foodieland/clientlibs,/apps/foodieland/comp
  onents,/apps/foodieland/i18n
-Import-Package: com.foodieland.core.models;version="[1.1.0,2.0.0)",org.a
- pache.sling.scripting.sightly;version="[2.0.0,3.0.0)"
+Import-Package: com.adobe.cq.wcm.core.components.models;version="[12.25.
+ 0,13.0.0)",com.foodieland.core.models;version="[1.1.0,2.0.0)",org.apach
+ e.sling.scripting.sightly;version="[2.0.0,3.0.0)"
 

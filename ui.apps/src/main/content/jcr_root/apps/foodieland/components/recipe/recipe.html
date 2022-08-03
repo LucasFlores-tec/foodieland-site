@@ -12,9 +12,17 @@
 		<h4 class="cmp-recipe__ingredient">${recipe.ingredient}</h4>
 		<h4 class="cmp-recipe__authorName">${recipe.name}</h4>
 		<h4 class="cmp-recipe__date">${recipe.date}</h4>
-		<a href="${recipe.link}">
-			<button>View Recipe</button>
-		</a>
+		
+		<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+	        data-sly-element="${button.buttonLink.valid ? 'a' : 'button'}"
+	        type="${button.buttonLink.valid ? '' : 'button'}"
+	        data-sly-attribute="${button.buttonLink.htmlAttributes}"
+	        aria-label="${button.accessibilityLabel}"
+	        data-cmp-clickable="${button.data ? true : false}"
+	        data-cmp-data-layer="${button.data.json}">
+	    	<span class="cmp-button__text">View Recipe</span>
+		</button>
+
 	</div>
 	
 	<div class="cmp-recipe__image">
