@@ -4,10 +4,9 @@
 		xmlns:cq="http://www.day.com/jcr/cq/1.0"
 		xmlns:jcr="http://www.jcp.org/jcr/1.0"
 		
-		cq:icon="card"
 		jcr:primaryType="cq:Component"
 		jcr:title="Simple Recipe Preview"
 		jcr:description="Displays a preview of the recipe under Simple and tasty recipes section."
 		componentGroup="Foodieland Site - Content"
-		sling:resourceSuperType="core/wcm/components/teaser/v2/teaser"
+		sling:resourceSuperType="core/wcm/components/image/v3/image"
 	/>

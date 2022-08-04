@@ -4,7 +4,7 @@
 <comment>Foodieland Site - Repository Structure Package</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2022-08-03T16:19:10.513Z</entry>
+<entry key="created">2022-08-03T20:31:50.040Z</entry>
 <entry key="groupId">com.foodieland</entry>
 <entry key="name">foodieland-site.ui.apps.structure</entry>
 <entry key="description">Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.

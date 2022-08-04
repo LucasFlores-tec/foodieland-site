@@ -4,10 +4,12 @@ C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\models\package-info.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\servlets\package-info.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\models\Category.java
+C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\models\impl\SimpleRecipeImpl.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\filters\LoggingFilter.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\filters\package-info.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\models\Recipe.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\models\impl\CategoryImpl.java
+C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\models\SimpleRecipe.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\listeners\package-info.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\servlets\SimpleServlet.java
 C:\Users\lucas.flores\valtech-usecases\usecaseIII\foodieland-site\core\src\main\java\com\foodieland\core\listeners\SimpleResourceListener.java

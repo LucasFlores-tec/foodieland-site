@@ -3,6 +3,7 @@ com\foodieland\core\schedulers\SimpleScheduledTask.class
 com\foodieland\core\models\package-info.class
 com\foodieland\core\listeners\package-info.class
 com\foodieland\core\servlets\package-info.class
+com\foodieland\core\models\SimpleRecipe.class
 com\foodieland\core\schedulers\package-info.class
 com\foodieland\core\models\Category.class
 com\foodieland\core\models\impl\RecipeImpl.class
@@ -10,6 +11,7 @@ com\foodieland\core\models\Recipe.class
 com\foodieland\core\listeners\SimpleResourceListener.class
 com\foodieland\core\schedulers\SimpleScheduledTask$Config.class
 com\foodieland\core\filters\LoggingFilter.class
+com\foodieland\core\models\impl\SimpleRecipeImpl.class
 com\foodieland\core\models\HelloWorldModel.class
 com\foodieland\core\servlets\SimpleServlet.class
 com\foodieland\core\filters\package-info.class

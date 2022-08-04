@@ -1,4 +1,23 @@
 <!--/* simplerecipe.html */-->
-<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+<div
+	class="cmp-simplerecipe"
+	data-sly-use.simplerecipe="com.foodieland.core.models.SimpleRecipe" 
+	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+	
+	<div class="cmp-simplerecipe__image">
+		<div class="cmp-simplerecipe__image-sr" data-sly-include="image.html"></div>
+	</div>
+	
+	<div class="cmp-simplerecipe__title" data-sly-test="${simplerecipe.title}">
+		<h4 class="cmp-simplerecipe__title-sr">${simplerecipe.title}</h4>
+	</div>
+	
+	<div class="cmp-simplerecipe__timeandcategory">
+		<div class="cmp-simplerecipe__timeandcategory--time" data-sly-test="${simplerecipe.time}">
+			<p>${simplerecipe.time}</p>
+		</div>
+		<div class="cmp-simplerecipe__timeandcategory--category" data-sly-test="${simplerecipe.select}">
+			<p>${simplerecipe.select}</p>
+		</div>
+	</div>
 </div>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
