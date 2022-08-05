@@ -1,12 +1,27 @@
 .cmp-category {
 	display: block;
+	width: 180px;
+	height: 202px;
+	background: linear-gradient(180deg, rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%);
+	border-radius: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
 	
 	.cmp-category__image {
-		width: 160px;
-		height: 140px;
+		width: 100px;
+		height: 100px;
+		margin-left: 40px;
+   		margin-right: 40px;
 	}
-	
+		
 	.cmp-category__name {
-		justify-self: center;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		letter-spacing: -0.02em;
+		padding-top: 30px;
 	}
 }

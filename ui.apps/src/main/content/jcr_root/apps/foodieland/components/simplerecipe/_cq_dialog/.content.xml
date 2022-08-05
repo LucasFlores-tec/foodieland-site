@@ -92,12 +92,19 @@
 														fieldLabel="Time to Prepare"
 														name="./time"
 														required="{Boolean}true"/>
+												</items>
+											</tagGroup>
+											<categoryGroup
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/well">
+												<items
+													jcr:primaryType="nt:unstructured">
 													<category
-														granite:class="cq-dialog-dropdown-showhide"
+														granite:class="core-title-sizes-default"
 														jcr:primaryType="nt:unstructured"
 														sling:resourceType="granite/ui/components/coral/foundation/form/select"
 														fieldLabel="Select the Category"
-														name="./select">
+														name="./categorytag">
 														<granite:data 
 															jcr:primaryType="nt:unstructured"
 															cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
@@ -130,7 +137,7 @@
 														</items>
 													</category>
 												</items>
-											</tagGroup>
+											</categoryGroup>
 										</items>
 									</column>
 								</items>

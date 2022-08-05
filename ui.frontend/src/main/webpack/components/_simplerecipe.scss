@@ -1,10 +1,25 @@
 .cmp-simplerecipe {
+	margin-left: 50px;
+    margin-right: 50px;
+	width: 400px;
+	height: 434px;
 	display: block;
+	background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+	border-radius: 30px;
 	
 	.cmp-simplerecipe__image {
+		padding: 15px;
 		width: 368px;
 		height: 250px;
 	}
 	
-	.cmp-simplerecipe__timeandcategory {}
+	.cmp-simplerecipe__title {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	.cmp-simplerecipe__timeandcategory {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 }

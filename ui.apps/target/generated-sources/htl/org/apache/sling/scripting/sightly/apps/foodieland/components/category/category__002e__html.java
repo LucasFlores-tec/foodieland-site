@@ -41,12 +41,12 @@ _global_category = renderContext.call("use", com.foodieland.core.models.Category
 _global_placeholdertemplate = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
 _global_hascontent = (!renderContext.getObjectModel().toBoolean(renderContext.getObjectModel().resolveProperty(_global_category, "empty")));
 if (renderContext.getObjectModel().toBoolean(_global_hascontent)) {
-    out.write("<div class=\"cmp-category\">\r\n\t\r\n\t<div class=\"cmp-category__image\">\r\n\t\t<div class=\"cmp-category__image-category\">");
+    out.write("<div class=\"cmp-category\">\r\n\t\r\n\t<div class=\"cmp-category__image\">");
     {
         Object var_includedresult0 = renderContext.call("include", "image.html", obj());
         out.write(renderContext.getObjectModel().toString(var_includedresult0));
     }
-    out.write("</div>\r\n\t</div>\r\n\t\r\n\t<div class=\"cmp-category__name\">\r\n\t\t<h4 class=\"cmp-category__name-category\">");
+    out.write("</div>\r\n\t\r\n\t<div class=\"cmp-category__name\">\r\n\t\t<h4 class=\"cmp-category__name-category\">");
     {
         Object var_2 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_category, "name"), "text");
         out.write(renderContext.getObjectModel().toString(var_2));
