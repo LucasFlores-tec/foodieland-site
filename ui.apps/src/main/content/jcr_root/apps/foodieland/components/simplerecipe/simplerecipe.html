@@ -1,11 +1,14 @@
 <!--/* simplerecipe.html */-->
 <div
 	class="cmp-simplerecipe"
-	data-sly-use.simplerecipe="com.foodieland.core.models.SimpleRecipe" 
+	data-sly-use.simplerecipe="com.foodieland.core.models.SimpleRecipe"
+	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
 	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
 	
 	<div class="cmp-simplerecipe__image">
-		<div class="cmp-simplerecipe__image-sr" data-sly-include="image.html"></div>
+		<a href="${image.link}"> 
+			<img src="${image.src}" alt=""/>
+		</a>
 	</div>
 	
 	<div class="cmp-simplerecipe__title" data-sly-test="${simplerecipe.title}">

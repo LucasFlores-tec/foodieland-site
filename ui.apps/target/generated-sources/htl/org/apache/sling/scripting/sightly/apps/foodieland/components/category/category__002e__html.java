@@ -35,35 +35,66 @@ public final class category__002e__html extends RenderUnit {
 // Main Template Body -----------------------------------------------------------------------------
 
 Object _global_category = null;
+Object _global_image = null;
 Object _global_placeholdertemplate = null;
-Object _global_hascontent = null;
 _global_category = renderContext.call("use", com.foodieland.core.models.Category.class.getName(), obj());
+_global_image = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Image.class.getName(), obj());
 _global_placeholdertemplate = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
-_global_hascontent = (!renderContext.getObjectModel().toBoolean(renderContext.getObjectModel().resolveProperty(_global_category, "empty")));
-if (renderContext.getObjectModel().toBoolean(_global_hascontent)) {
-    out.write("<div class=\"cmp-category\">\r\n\t\r\n\t<div class=\"cmp-category__image\">");
-    {
-        Object var_includedresult0 = renderContext.call("include", "image.html", obj());
-        out.write(renderContext.getObjectModel().toString(var_includedresult0));
-    }
-    out.write("</div>\r\n\t\r\n\t<div class=\"cmp-category__name\">\r\n\t\t<h4 class=\"cmp-category__name-category\">");
-    {
-        Object var_2 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_category, "name"), "text");
-        out.write(renderContext.getObjectModel().toString(var_2));
-    }
-    out.write("</h4>\r\n\t</div>\r\n</div>");
-}
-out.write("\r\n");
+out.write("<div class=\"cmp-category\">\r\n\t\r\n\t<div class=\"cmp-category__image\">\r\n\t\t<a");
 {
-    Object var_templatevar3 = renderContext.getObjectModel().resolveProperty(_global_placeholdertemplate, "placeholder");
+    Object var_attrvalue0 = renderContext.getObjectModel().resolveProperty(_global_image, "link");
     {
-        Object var_templateoptions4_field$_isempty = _global_hascontent;
+        Object var_attrcontent1 = renderContext.call("xss", var_attrvalue0, "uri");
         {
-            java.util.Map var_templateoptions4 = obj().with("isEmpty", var_templateoptions4_field$_isempty);
-            callUnit(out, renderContext, var_templatevar3, var_templateoptions4);
+            boolean var_shoulddisplayattr3 = (((null != var_attrcontent1) && (!"".equals(var_attrcontent1))) && ((!"".equals(var_attrvalue0)) && (!((Object)false).equals(var_attrvalue0))));
+            if (var_shoulddisplayattr3) {
+                out.write(" href");
+                {
+                    boolean var_istrueattr2 = (var_attrvalue0.equals(true));
+                    if (!var_istrueattr2) {
+                        out.write("=\"");
+                        out.write(renderContext.getObjectModel().toString(var_attrcontent1));
+                        out.write("\"");
+                    }
+                }
+            }
         }
     }
 }
+out.write("> \r\n\t\t\t<img");
+{
+    Object var_attrvalue4 = renderContext.getObjectModel().resolveProperty(_global_image, "src");
+    {
+        Object var_attrcontent5 = renderContext.call("xss", var_attrvalue4, "uri");
+        {
+            boolean var_shoulddisplayattr7 = (((null != var_attrcontent5) && (!"".equals(var_attrcontent5))) && ((!"".equals(var_attrvalue4)) && (!((Object)false).equals(var_attrvalue4))));
+            if (var_shoulddisplayattr7) {
+                out.write(" src");
+                {
+                    boolean var_istrueattr6 = (var_attrvalue4.equals(true));
+                    if (!var_istrueattr6) {
+                        out.write("=\"");
+                        out.write(renderContext.getObjectModel().toString(var_attrcontent5));
+                        out.write("\"");
+                    }
+                }
+            }
+        }
+    }
+}
+out.write(" alt=\"\"/>\r\n\t\t</a>\r\n\t</div>\r\n\t\r\n\t");
+{
+    Object var_testvariable8 = renderContext.getObjectModel().resolveProperty(_global_category, "name");
+    if (renderContext.getObjectModel().toBoolean(var_testvariable8)) {
+        out.write("<div class=\"cmp-category__name\">\r\n\t\t<h4 class=\"cmp-category__name-category\">");
+        {
+            Object var_9 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_category, "name"), "text");
+            out.write(renderContext.getObjectModel().toString(var_9));
+        }
+        out.write("</h4>\r\n\t</div>");
+    }
+}
+out.write("\r\n</div>");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

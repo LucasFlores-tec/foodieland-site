@@ -9,13 +9,16 @@
 	align-self: center;
 	
 	.cmp-recipe__image {
-	    height: 500px;
-	    padding-left: 30px;
-	    width: 625px;
+	    width: 610px;
 	    
-	    .cmp-image__image {
+		.cmp-recipe__image--img {
+			height: 500px;
 			border-bottom-right-radius: 30px;
 		    border-top-right-radius: 30px;
 		}
+	}
+	
+	.cmp-recipe__data {
+		padding-right: 60px;
 	}
 }

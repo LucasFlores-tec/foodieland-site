@@ -15,5 +15,4 @@ public interface SimpleRecipe {
 	 * @return a String with the category of the component Simple Recipe.
 	 */
 	String getSelect();
-
 }

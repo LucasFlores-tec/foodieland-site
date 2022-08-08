@@ -1,12 +1,15 @@
 <div class="cmp-category"
 	data-sly-use.category="com.foodieland.core.models.Category"
-	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-	data-sly-test.hasContent="${!category.empty}">
+	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
 	
-	<div class="cmp-category__image" data-sly-include="image.html"></div>
+	<div class="cmp-category__image">
+		<a href="${image.link}"> 
+			<img src="${image.src}" alt=""/>
+		</a>
+	</div>
 	
-	<div class="cmp-category__name">
+	<div class="cmp-category__name" data-sly-test="${category.name}">
 		<h4 class="cmp-category__name-category">${category.name}</h4>
 	</div>
 </div>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=hasContent}"></sly>
