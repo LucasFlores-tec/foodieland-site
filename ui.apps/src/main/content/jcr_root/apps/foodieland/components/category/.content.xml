@@ -8,5 +8,4 @@
 	    jcr:title="Category"
 	    jcr:description="Displays a category of recipies"
 	    componentGroup="Foodieland Site - Content"
-	    sling:resourceSuperType="core/wcm/components/image/v3/image"
 	/>

@@ -48,8 +48,9 @@ public interface Recipe {
 	Date getDate();
 	
 	/**
-	 * @return a boolean if the component has enough content to display.
+	 * @return a String with the path to the image.
 	 */
-	boolean isEmpty();
+	String getImageReference();
+	
 
 }

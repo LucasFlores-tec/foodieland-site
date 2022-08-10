@@ -11,10 +11,13 @@ import com.foodieland.core.models.SimpleRecipe;
 		adapters = {SimpleRecipe.class},
 		resourceType = {SimpleRecipeImpl.RESOURCE_TYPE},
 		defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-		)
+)
 public class SimpleRecipeImpl implements SimpleRecipe {
 	
 	protected static final String RESOURCE_TYPE = "foodieland/components/simplerecipe";
+	
+	@ValueMapValue
+	private String imageReference;
 	@ValueMapValue
 	private String title;
 	@ValueMapValue
@@ -33,8 +36,13 @@ public class SimpleRecipeImpl implements SimpleRecipe {
 	}
 
 	@Override
-	public String getSelect() {
+	public String getCategory() {
 		return category;
+	}
+	
+	@Override
+	public String getImageReference() {
+		return imageReference;
 	}
 
 }

@@ -2,12 +2,11 @@
 <div
 	class="cmp-simplerecipe"
 	data-sly-use.simplerecipe="com.foodieland.core.models.SimpleRecipe"
-	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
-	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image">
 	
 	<div class="cmp-simplerecipe__image">
 		<a href="${image.link}"> 
-			<img src="${image.src}" alt=""/>
+			<img src="${simplerecipe.imageReference}"/>
 		</a>
 	</div>
 	
@@ -19,8 +18,8 @@
 		<div class="cmp-simplerecipe__timeandcategory--time" data-sly-test="${simplerecipe.time}">
 			<p>${simplerecipe.time}</p>
 		</div>
-		<div class="cmp-simplerecipe__timeandcategory--category" data-sly-test="${simplerecipe.select}">
-			<p>${simplerecipe.select}</p>
+		<div class="cmp-simplerecipe__timeandcategory--category" data-sly-test="${simplerecipe.selectCategory}">
+			<p>${simplerecipe.selectCategory}</p>
 		</div>
 	</div>
 </div>

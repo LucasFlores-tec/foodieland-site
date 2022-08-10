@@ -4,7 +4,7 @@
 <comment>Foodieland Site - UI config</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2022-08-05T19:46:56.469Z</entry>
+<entry key="created">2022-08-09T20:19:43.966Z</entry>
 <entry key="groupId">com.foodieland</entry>
 <entry key="name">foodieland-site.ui.config</entry>
 <entry key="description">UI config package for Foodieland Site</entry>

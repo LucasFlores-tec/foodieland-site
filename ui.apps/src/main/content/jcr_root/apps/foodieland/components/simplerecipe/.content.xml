@@ -8,5 +8,4 @@
 		jcr:title="Simple Recipe Preview"
 		jcr:description="Displays a preview of the recipe under Simple and tasty recipes section."
 		componentGroup="Foodieland Site - Content"
-		sling:resourceSuperType="core/wcm/components/image/v3/image"
 	/>

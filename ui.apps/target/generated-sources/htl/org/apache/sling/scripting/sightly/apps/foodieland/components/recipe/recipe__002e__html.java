@@ -36,14 +36,11 @@ public final class recipe__002e__html extends RenderUnit {
 
 Object _global_recipe = null;
 Object _global_image = null;
-Object _global_placeholdertemplate = null;
 Object _global_button = null;
-Collection var_attrmap15_list_coerced$ = null;
-out.write("\r\n");
+out.write("\n");
 _global_recipe = renderContext.call("use", com.foodieland.core.models.Recipe.class.getName(), obj());
 _global_image = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Image.class.getName(), obj());
-_global_placeholdertemplate = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
-out.write("<div class=\"cmp-recipe\">\r\n\t\r\n\t<div class=\"cmp-recipe__data\">\r\n\t\t");
+out.write("<div class=\"cmp-recipe\">\n\t\n\t<div class=\"cmp-recipe__data\">\n\t\t");
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_global_recipe, "type");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
@@ -55,7 +52,7 @@ out.write("<div class=\"cmp-recipe\">\r\n\t\r\n\t<div class=\"cmp-recipe__data\"
         out.write("</h4>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 {
     Object var_testvariable2 = renderContext.getObjectModel().resolveProperty(_global_recipe, "title");
     if (renderContext.getObjectModel().toBoolean(var_testvariable2)) {
@@ -67,7 +64,7 @@ out.write("\r\n\t\t");
         out.write("</h2>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 {
     Object var_testvariable4 = renderContext.getObjectModel().resolveProperty(_global_recipe, "description");
     if (renderContext.getObjectModel().toBoolean(var_testvariable4)) {
@@ -79,7 +76,7 @@ out.write("\r\n\t\t");
         out.write("</p>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 {
     Object var_testvariable6 = renderContext.getObjectModel().resolveProperty(_global_recipe, "prepare");
     if (renderContext.getObjectModel().toBoolean(var_testvariable6)) {
@@ -91,7 +88,7 @@ out.write("\r\n\t\t");
         out.write("</h4>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 {
     Object var_testvariable8 = renderContext.getObjectModel().resolveProperty(_global_recipe, "ingredient");
     if (renderContext.getObjectModel().toBoolean(var_testvariable8)) {
@@ -103,7 +100,7 @@ out.write("\r\n\t\t");
         out.write("</h4>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 {
     Object var_testvariable10 = renderContext.getObjectModel().resolveProperty(_global_recipe, "name");
     if (renderContext.getObjectModel().toBoolean(var_testvariable10)) {
@@ -115,7 +112,7 @@ out.write("\r\n\t\t");
         out.write("</h4>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 {
     Object var_testvariable12 = renderContext.getObjectModel().resolveProperty(_global_recipe, "date");
     if (renderContext.getObjectModel().toBoolean(var_testvariable12)) {
@@ -127,155 +124,22 @@ out.write("\r\n\t\t");
         out.write("</h4>");
     }
 }
-out.write("\r\n\t\t");
+out.write("\n\t\t");
 _global_button = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Button.class.getName(), obj());
+out.write("<button>\n\t    \t<span class=\"cmp-button__text\">View Recipe</span>\n\t\t</button>\n\t</div>\n\t\n\t<div class=\"cmp-recipe__image\">\n\t\t<a");
 {
-    Object var_tagvar14 = renderContext.call("xss", (renderContext.getObjectModel().toBoolean(renderContext.getObjectModel().resolveProperty(renderContext.getObjectModel().resolveProperty(_global_button, "buttonLink"), "valid")) ? "a" : "button"), "elementName");
-    if (renderContext.getObjectModel().toBoolean(var_tagvar14)) {
-        out.write("<");
-        out.write(renderContext.getObjectModel().toString(var_tagvar14));
-    }
-    if (!renderContext.getObjectModel().toBoolean(var_tagvar14)) {
-        out.write("<button");
-    }
+    Object var_attrvalue14 = renderContext.getObjectModel().resolveProperty(_global_image, "link");
     {
-        Object var_attrmap15 = renderContext.getObjectModel().resolveProperty(renderContext.getObjectModel().resolveProperty(_global_button, "buttonLink"), "htmlAttributes");
+        Object var_attrcontent15 = renderContext.call("xss", var_attrvalue14, "uri");
         {
-            Object var_attrvalue16 = renderContext.getObjectModel().resolveProperty(_global_button, "accessibilityLabel");
-            {
-                Object var_attrcontent17 = renderContext.call("xss", var_attrvalue16, "attribute");
-                {
-                    boolean var_shoulddisplayattr19 = (((null != var_attrcontent17) && (!"".equals(var_attrcontent17))) && ((!"".equals(var_attrvalue16)) && (!((Object)false).equals(var_attrvalue16))));
-                    if (var_shoulddisplayattr19) {
-                        out.write(" aria-label");
-                        {
-                            boolean var_istrueattr18 = (var_attrvalue16.equals(true));
-                            if (!var_istrueattr18) {
-                                out.write("=\"");
-                                out.write(renderContext.getObjectModel().toString(var_attrcontent17));
-                                out.write("\"");
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        {
-            boolean var_attrvalue20 = (renderContext.getObjectModel().toBoolean(renderContext.getObjectModel().resolveProperty(_global_button, "data")) ? true : false);
-            {
-                Object var_attrcontent21 = renderContext.call("xss", var_attrvalue20, "attribute");
-                {
-                    boolean var_shoulddisplayattr23 = (((null != var_attrcontent21) && (!"".equals(var_attrcontent21))) && ((!"".equals(var_attrvalue20)) && (false != var_attrvalue20)));
-                    if (var_shoulddisplayattr23) {
-                        out.write(" data-cmp-clickable");
-                        {
-                            boolean var_istrueattr22 = (var_attrvalue20 == true);
-                            if (!var_istrueattr22) {
-                                out.write("=\"");
-                                out.write(renderContext.getObjectModel().toString(var_attrcontent21));
-                                out.write("\"");
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        {
-            Object var_attrvalue24 = renderContext.getObjectModel().resolveProperty(renderContext.getObjectModel().resolveProperty(_global_button, "data"), "json");
-            {
-                Object var_attrcontent25 = renderContext.call("xss", var_attrvalue24, "attribute");
-                {
-                    boolean var_shoulddisplayattr27 = (((null != var_attrcontent25) && (!"".equals(var_attrcontent25))) && ((!"".equals(var_attrvalue24)) && (!((Object)false).equals(var_attrvalue24))));
-                    if (var_shoulddisplayattr27) {
-                        out.write(" data-cmp-data-layer");
-                        {
-                            boolean var_istrueattr26 = (var_attrvalue24.equals(true));
-                            if (!var_istrueattr26) {
-                                out.write("=\"");
-                                out.write(renderContext.getObjectModel().toString(var_attrcontent25));
-                                out.write("\"");
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        {
-            boolean var_ignoredattributes28_field$_data__002d__cmp__002d__data__002d__layer = true;
-            {
-                boolean var_ignoredattributes28_field$_data__002d__cmp__002d__clickable = true;
-                {
-                    boolean var_ignoredattributes28_field$_aria__002d__label = true;
-                    {
-                        java.util.Map var_ignoredattributes28 = obj().with("data-cmp-data-layer", var_ignoredattributes28_field$_data__002d__cmp__002d__data__002d__layer).with("data-cmp-clickable", var_ignoredattributes28_field$_data__002d__cmp__002d__clickable).with("aria-label", var_ignoredattributes28_field$_aria__002d__label);
-                        if (var_attrmap15_list_coerced$ == null) {
-                            var_attrmap15_list_coerced$ = renderContext.getObjectModel().toCollection(var_attrmap15);
-                        }
-                        long var_attrindex31 = 0;
-                        for (Object var_attrname29 : var_attrmap15_list_coerced$) {
-                            {
-                                Object var_attrnameescaped30 = renderContext.call("xss", var_attrname29, "attributeName");
-                                if (renderContext.getObjectModel().toBoolean(var_attrnameescaped30)) {
-                                    {
-                                        Object var_isignoredattr32 = var_ignoredattributes28.get(var_attrname29);
-                                        if (!renderContext.getObjectModel().toBoolean(var_isignoredattr32)) {
-                                            {
-                                                Object var_attrcontent33 = renderContext.getObjectModel().resolveProperty(var_attrmap15, var_attrname29);
-                                                {
-                                                    Object var_attrcontentescaped34 = renderContext.call("xss", var_attrcontent33, "attribute", var_attrnameescaped30);
-                                                    {
-                                                        boolean var_shoulddisplayattr35 = (((null != var_attrcontentescaped34) && (!"".equals(var_attrcontentescaped34))) && ((!"".equals(var_attrcontent33)) && (!((Object)false).equals(var_attrcontent33))));
-                                                        if (var_shoulddisplayattr35) {
-                                                            out.write(" ");
-                                                            out.write(renderContext.getObjectModel().toString(var_attrnameescaped30));
-                                                            {
-                                                                boolean var_istrueattr36 = (var_attrcontent33.equals(true));
-                                                                if (!var_istrueattr36) {
-                                                                    out.write("=\"");
-                                                                    out.write(renderContext.getObjectModel().toString(var_attrcontentescaped34));
-                                                                    out.write("\"");
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            var_attrindex31++;
-                        }
-                    }
-                }
-            }
-        }
-        var_attrmap15_list_coerced$ = null;
-    }
-    out.write(">\r\n\t    \t<span class=\"cmp-button__text\">View Recipe</span>\r\n\t\t");
-    if (renderContext.getObjectModel().toBoolean(var_tagvar14)) {
-        out.write("</");
-        out.write(renderContext.getObjectModel().toString(var_tagvar14));
-        out.write(">");
-    }
-    if (!renderContext.getObjectModel().toBoolean(var_tagvar14)) {
-        out.write("</button>");
-    }
-}
-out.write("\r\n\t</div>\r\n\t\r\n\t<div class=\"cmp-recipe__image\">\r\n\t\t<a");
-{
-    Object var_attrvalue37 = renderContext.getObjectModel().resolveProperty(_global_image, "link");
-    {
-        Object var_attrcontent38 = renderContext.call("xss", var_attrvalue37, "uri");
-        {
-            boolean var_shoulddisplayattr40 = (((null != var_attrcontent38) && (!"".equals(var_attrcontent38))) && ((!"".equals(var_attrvalue37)) && (!((Object)false).equals(var_attrvalue37))));
-            if (var_shoulddisplayattr40) {
+            boolean var_shoulddisplayattr17 = (((null != var_attrcontent15) && (!"".equals(var_attrcontent15))) && ((!"".equals(var_attrvalue14)) && (!((Object)false).equals(var_attrvalue14))));
+            if (var_shoulddisplayattr17) {
                 out.write(" href");
                 {
-                    boolean var_istrueattr39 = (var_attrvalue37.equals(true));
-                    if (!var_istrueattr39) {
+                    boolean var_istrueattr16 = (var_attrvalue14.equals(true));
+                    if (!var_istrueattr16) {
                         out.write("=\"");
-                        out.write(renderContext.getObjectModel().toString(var_attrcontent38));
+                        out.write(renderContext.getObjectModel().toString(var_attrcontent15));
                         out.write("\"");
                     }
                 }
@@ -283,20 +147,20 @@ out.write("\r\n\t</div>\r\n\t\r\n\t<div class=\"cmp-recipe__image\">\r\n\t\t<a")
         }
     }
 }
-out.write("> \r\n\t\t\t<img class=\"cmp-recipe__image--img\"");
+out.write("> \n\t\t\t<img class=\"cmp-recipe__image--img\"");
 {
-    Object var_attrvalue41 = renderContext.getObjectModel().resolveProperty(_global_image, "src");
+    Object var_attrvalue18 = renderContext.getObjectModel().resolveProperty(_global_recipe, "imageReference");
     {
-        Object var_attrcontent42 = renderContext.call("xss", var_attrvalue41, "uri");
+        Object var_attrcontent19 = renderContext.call("xss", var_attrvalue18, "uri");
         {
-            boolean var_shoulddisplayattr44 = (((null != var_attrcontent42) && (!"".equals(var_attrcontent42))) && ((!"".equals(var_attrvalue41)) && (!((Object)false).equals(var_attrvalue41))));
-            if (var_shoulddisplayattr44) {
+            boolean var_shoulddisplayattr21 = (((null != var_attrcontent19) && (!"".equals(var_attrcontent19))) && ((!"".equals(var_attrvalue18)) && (!((Object)false).equals(var_attrvalue18))));
+            if (var_shoulddisplayattr21) {
                 out.write(" src");
                 {
-                    boolean var_istrueattr43 = (var_attrvalue41.equals(true));
-                    if (!var_istrueattr43) {
+                    boolean var_istrueattr20 = (var_attrvalue18.equals(true));
+                    if (!var_istrueattr20) {
                         out.write("=\"");
-                        out.write(renderContext.getObjectModel().toString(var_attrcontent42));
+                        out.write(renderContext.getObjectModel().toString(var_attrcontent19));
                         out.write("\"");
                     }
                 }
@@ -304,7 +168,7 @@ out.write("> \r\n\t\t\t<img class=\"cmp-recipe__image--img\"");
         }
     }
 }
-out.write("/>\r\n\t\t</a>\r\n\t</div>\r\n\t\r\n</div>");
+out.write("/>\n\t\t</a>\n\t</div>\n</div>\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

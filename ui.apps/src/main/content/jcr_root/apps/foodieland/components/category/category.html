@@ -1,11 +1,10 @@
 <div class="cmp-category"
 	data-sly-use.category="com.foodieland.core.models.Category"
-	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
-	data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image">
 	
 	<div class="cmp-category__image">
 		<a href="${image.link}"> 
-			<img src="${image.src}" alt=""/>
+			<img src="${category.imageReference}"/>
 		</a>
 	</div>
 	

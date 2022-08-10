@@ -8,5 +8,4 @@
 	    jcr:title="Recipe"
 	    jcr:description="Displays the recipe's main information as a hero component."
 	    componentGroup="Foodieland Site - Content"
-	    sling:resourceSuperType="core/wcm/components/image/v3/image" 
 	/>

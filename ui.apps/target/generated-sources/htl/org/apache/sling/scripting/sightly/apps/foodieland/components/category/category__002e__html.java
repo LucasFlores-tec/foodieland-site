@@ -36,11 +36,9 @@ public final class category__002e__html extends RenderUnit {
 
 Object _global_category = null;
 Object _global_image = null;
-Object _global_placeholdertemplate = null;
 _global_category = renderContext.call("use", com.foodieland.core.models.Category.class.getName(), obj());
 _global_image = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Image.class.getName(), obj());
-_global_placeholdertemplate = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
-out.write("<div class=\"cmp-category\">\r\n\t\r\n\t<div class=\"cmp-category__image\">\r\n\t\t<a");
+out.write("<div class=\"cmp-category\">\n\t\n\t<div class=\"cmp-category__image\">\n\t\t<a");
 {
     Object var_attrvalue0 = renderContext.getObjectModel().resolveProperty(_global_image, "link");
     {
@@ -61,9 +59,9 @@ out.write("<div class=\"cmp-category\">\r\n\t\r\n\t<div class=\"cmp-category__im
         }
     }
 }
-out.write("> \r\n\t\t\t<img");
+out.write("> \n\t\t\t<img");
 {
-    Object var_attrvalue4 = renderContext.getObjectModel().resolveProperty(_global_image, "src");
+    Object var_attrvalue4 = renderContext.getObjectModel().resolveProperty(_global_category, "imageReference");
     {
         Object var_attrcontent5 = renderContext.call("xss", var_attrvalue4, "uri");
         {
@@ -82,19 +80,19 @@ out.write("> \r\n\t\t\t<img");
         }
     }
 }
-out.write(" alt=\"\"/>\r\n\t\t</a>\r\n\t</div>\r\n\t\r\n\t");
+out.write("/>\n\t\t</a>\n\t</div>\n\t\n\t");
 {
     Object var_testvariable8 = renderContext.getObjectModel().resolveProperty(_global_category, "name");
     if (renderContext.getObjectModel().toBoolean(var_testvariable8)) {
-        out.write("<div class=\"cmp-category__name\">\r\n\t\t<h4 class=\"cmp-category__name-category\">");
+        out.write("<div class=\"cmp-category__name\">\n\t\t<h4 class=\"cmp-category__name-category\">");
         {
             Object var_9 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_category, "name"), "text");
             out.write(renderContext.getObjectModel().toString(var_9));
         }
-        out.write("</h4>\r\n\t</div>");
+        out.write("</h4>\n\t</div>");
     }
 }
-out.write("\r\n</div>");
+out.write("\n</div>");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

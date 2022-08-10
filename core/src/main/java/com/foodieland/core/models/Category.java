@@ -8,8 +8,8 @@ public interface Category {
 	String getName();
 	
 	/**
-	 * @return a boolean the check if there are any empty field.
+	 * @return a String with the path to the image.
 	 */
-	boolean isEmpty();
+	String getImageReference();
 
 }
