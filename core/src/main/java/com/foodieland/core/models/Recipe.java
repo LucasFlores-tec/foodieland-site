@@ -52,5 +52,10 @@ public interface Recipe {
 	 */
 	String getImageReference();
 	
+	/**
+	 * @return a String with the path to the author's image.
+	 */
+	String getImageAuthorReference();
+	
 
 }

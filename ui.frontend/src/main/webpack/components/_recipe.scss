@@ -8,17 +8,52 @@
 	border-radius: 30px;
 	align-self: center;
 	
-	.cmp-recipe__image {
-	    width: 610px;
+	.cmp-recipe__image-name-date--image {
+	    width: 100px;
+   		align-self: center;
 	    
-		.cmp-recipe__image--img {
-			height: 500px;
-			border-bottom-right-radius: 30px;
-		    border-top-right-radius: 30px;
+		.cmp-recipe__image-name-date--image--author {
+			width: 70px;
+			height: 70px;
+			background: url(.png);
+			border-radius: 70px;
 		}
 	}
 	
+	.cmp-recipe__button {
+		width: 180px;
+		height: 60px;
+		background: #000000;
+		border-radius: 16px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	.cmp-recipe__button--title {
+		width: 75px;
+		height: 17px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+	}
+	
+	.cmp-recipe__image--img {
+			height: 500px;
+			border-bottom-right-radius: 30px;
+		    border-top-right-radius: 30px;
+	}
+		
 	.cmp-recipe__data {
 		padding-right: 60px;
+		
+		.cmp-recipe__image-name-date {
+			display: flex;
+			
+			.cmp-recipe__image-name-date--name-date {
+				width: 300px;
+				display: block;
+			}
+		}
 	}
 }

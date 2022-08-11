@@ -1,22 +1,44 @@
 <!--/* recipe.html */-->
 <div class="cmp-recipe"
 	data-sly-use.recipe="com.foodieland.core.models.Recipe"
-	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image">
+	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+	data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button">
 	
 	<div class="cmp-recipe__data">
-		<h4 class="cmp-recipe__type" data-sly-test="${recipe.type}">${recipe.type}</h4>
-		<h2 class="cmp-recipe__title" data-sly-test="${recipe.title}">${recipe.title}</h2>
-		<p class="cmp-recipe__description" data-sly-test="${recipe.description}">${recipe.description}</p>
-		<h4 class="cmp-recipe__time" data-sly-test="${recipe.prepare}">${recipe.prepare}</h4>
-		<h4 class="cmp-recipe__ingredient" data-sly-test="${recipe.ingredient}">${recipe.ingredient}</h4>
-		<h4 class="cmp-recipe__authorName" data-sly-test="${recipe.name}">${recipe.name}</h4>
-		<h4 class="cmp-recipe__date" data-sly-test="${recipe.date}">${recipe.date}</h4>
-		<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button">
-	    	<span class="cmp-button__text">View Recipe</span>
-		</button>
+		<div class="cmp-recipe__type">
+			<h4 class="cmp-recipe__type--text" data-sly-test="${recipe.type}">${recipe.type}</h4>
+		</div>
+		<div class="cmp-recipe__title">
+			<h2 class="cmp-recipe__title--text" data-sly-test="${recipe.title}">${recipe.title}</h2>
+		</div>
+		<div class="cmp-recipe__description">
+			<p class="cmp-recipe__description--text" data-sly-test="${recipe.description}">${recipe.description}</p>
+		</div>
+		<div class="cmp-recipe__time">
+			<h4 class="cmp-recipe__time--text" data-sly-test="${recipe.prepare}">${recipe.prepare}</h4>
+		</div>
+		<div class="cmp-recipe__ingredient">
+			<h4 class="cmp-recipe__ingredient--text" data-sly-test="${recipe.ingredient}">${recipe.ingredient}</h4>
+		</div>
+		<div class="cmp-recipe__image-name-date">
+			<div class="cmp-recipe__image-name-date--image" data-sly-test="${recipe.imageAuthorReference}">
+				<img class="cmp-recipe__image-name-date--image--author" src="${recipe.imageAuthorReference}"/>
+			</div>
+			<div class="cmp-recipe__image-name-date--name-date">
+				<div class="cmp-recipe__image-name-date--name-date__name">
+					<h4 class="cmp-recipe__image-name-date--name-date__name--text" data-sly-test="${recipe.name}">${recipe.name}</h4>
+				</div>
+				<div class="cmp-recipe__image-name-date--name-date__date">
+					<h4 class="cmp-recipe__image-name-date--name-date__date--text" data-sly-test="${recipe.date}">${recipe.date}</h4>
+				</div>
+			</div>
+		</div>
+		<div class="cmp-recipe__button" data-sly-include="button.html">
+	    	<span class="cmp-recipe__button--title" data-sly-test="${button.title}">${button.title}</span>
+		</div>
 	</div>
 	
-	<div class="cmp-recipe__image">
+	<div class="cmp-recipe__image" data-sly-test="${recipe.imageReference}">
 		<a href="${image.link}"> 
 			<img class="cmp-recipe__image--img" src="${recipe.imageReference}"/>
 		</a>

@@ -40,11 +40,12 @@ Object _global_button = null;
 out.write("\n");
 _global_recipe = renderContext.call("use", com.foodieland.core.models.Recipe.class.getName(), obj());
 _global_image = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Image.class.getName(), obj());
-out.write("<div class=\"cmp-recipe\">\n\t\n\t<div class=\"cmp-recipe__data\">\n\t\t");
+_global_button = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Button.class.getName(), obj());
+out.write("<div class=\"cmp-recipe\">\n\t\n\t<div class=\"cmp-recipe__data\">\n\t\t<div class=\"cmp-recipe__type\">\n\t\t\t");
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_global_recipe, "type");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("<h4 class=\"cmp-recipe__type\">");
+        out.write("<h4 class=\"cmp-recipe__type--text\">");
         {
             Object var_1 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "type"), "text");
             out.write(renderContext.getObjectModel().toString(var_1));
@@ -52,11 +53,11 @@ out.write("<div class=\"cmp-recipe\">\n\t\n\t<div class=\"cmp-recipe__data\">\n\
         out.write("</h4>");
     }
 }
-out.write("\n\t\t");
+out.write("\n\t\t</div>\n\t\t<div class=\"cmp-recipe__title\">\n\t\t\t");
 {
     Object var_testvariable2 = renderContext.getObjectModel().resolveProperty(_global_recipe, "title");
     if (renderContext.getObjectModel().toBoolean(var_testvariable2)) {
-        out.write("<h2 class=\"cmp-recipe__title\">");
+        out.write("<h2 class=\"cmp-recipe__title--text\">");
         {
             Object var_3 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "title"), "text");
             out.write(renderContext.getObjectModel().toString(var_3));
@@ -64,11 +65,11 @@ out.write("\n\t\t");
         out.write("</h2>");
     }
 }
-out.write("\n\t\t");
+out.write("\n\t\t</div>\n\t\t<div class=\"cmp-recipe__description\">\n\t\t\t");
 {
     Object var_testvariable4 = renderContext.getObjectModel().resolveProperty(_global_recipe, "description");
     if (renderContext.getObjectModel().toBoolean(var_testvariable4)) {
-        out.write("<p class=\"cmp-recipe__description\">");
+        out.write("<p class=\"cmp-recipe__description--text\">");
         {
             Object var_5 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "description"), "text");
             out.write(renderContext.getObjectModel().toString(var_5));
@@ -76,11 +77,11 @@ out.write("\n\t\t");
         out.write("</p>");
     }
 }
-out.write("\n\t\t");
+out.write("\n\t\t</div>\n\t\t<div class=\"cmp-recipe__time\">\n\t\t\t");
 {
     Object var_testvariable6 = renderContext.getObjectModel().resolveProperty(_global_recipe, "prepare");
     if (renderContext.getObjectModel().toBoolean(var_testvariable6)) {
-        out.write("<h4 class=\"cmp-recipe__time\">");
+        out.write("<h4 class=\"cmp-recipe__time--text\">");
         {
             Object var_7 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "prepare"), "text");
             out.write(renderContext.getObjectModel().toString(var_7));
@@ -88,11 +89,11 @@ out.write("\n\t\t");
         out.write("</h4>");
     }
 }
-out.write("\n\t\t");
+out.write("\n\t\t</div>\n\t\t<div class=\"cmp-recipe__ingredient\">\n\t\t\t");
 {
     Object var_testvariable8 = renderContext.getObjectModel().resolveProperty(_global_recipe, "ingredient");
     if (renderContext.getObjectModel().toBoolean(var_testvariable8)) {
-        out.write("<h4 class=\"cmp-recipe__ingredient\">");
+        out.write("<h4 class=\"cmp-recipe__ingredient--text\">");
         {
             Object var_9 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "ingredient"), "text");
             out.write(renderContext.getObjectModel().toString(var_9));
@@ -100,75 +101,113 @@ out.write("\n\t\t");
         out.write("</h4>");
     }
 }
-out.write("\n\t\t");
+out.write("\n\t\t</div>\n\t\t<div class=\"cmp-recipe__image-name-date\">\n\t\t\t");
 {
-    Object var_testvariable10 = renderContext.getObjectModel().resolveProperty(_global_recipe, "name");
+    Object var_testvariable10 = renderContext.getObjectModel().resolveProperty(_global_recipe, "imageAuthorReference");
     if (renderContext.getObjectModel().toBoolean(var_testvariable10)) {
-        out.write("<h4 class=\"cmp-recipe__authorName\">");
+        out.write("<div class=\"cmp-recipe__image-name-date--image\">\n\t\t\t\t<img class=\"cmp-recipe__image-name-date--image--author\"");
         {
-            Object var_11 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "name"), "text");
-            out.write(renderContext.getObjectModel().toString(var_11));
-        }
-        out.write("</h4>");
-    }
-}
-out.write("\n\t\t");
-{
-    Object var_testvariable12 = renderContext.getObjectModel().resolveProperty(_global_recipe, "date");
-    if (renderContext.getObjectModel().toBoolean(var_testvariable12)) {
-        out.write("<h4 class=\"cmp-recipe__date\">");
-        {
-            Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "date"), "text");
-            out.write(renderContext.getObjectModel().toString(var_13));
-        }
-        out.write("</h4>");
-    }
-}
-out.write("\n\t\t");
-_global_button = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Button.class.getName(), obj());
-out.write("<button>\n\t    \t<span class=\"cmp-button__text\">View Recipe</span>\n\t\t</button>\n\t</div>\n\t\n\t<div class=\"cmp-recipe__image\">\n\t\t<a");
-{
-    Object var_attrvalue14 = renderContext.getObjectModel().resolveProperty(_global_image, "link");
-    {
-        Object var_attrcontent15 = renderContext.call("xss", var_attrvalue14, "uri");
-        {
-            boolean var_shoulddisplayattr17 = (((null != var_attrcontent15) && (!"".equals(var_attrcontent15))) && ((!"".equals(var_attrvalue14)) && (!((Object)false).equals(var_attrvalue14))));
-            if (var_shoulddisplayattr17) {
-                out.write(" href");
+            Object var_attrvalue11 = renderContext.getObjectModel().resolveProperty(_global_recipe, "imageAuthorReference");
+            {
+                Object var_attrcontent12 = renderContext.call("xss", var_attrvalue11, "uri");
                 {
-                    boolean var_istrueattr16 = (var_attrvalue14.equals(true));
-                    if (!var_istrueattr16) {
-                        out.write("=\"");
-                        out.write(renderContext.getObjectModel().toString(var_attrcontent15));
-                        out.write("\"");
+                    boolean var_shoulddisplayattr14 = (((null != var_attrcontent12) && (!"".equals(var_attrcontent12))) && ((!"".equals(var_attrvalue11)) && (!((Object)false).equals(var_attrvalue11))));
+                    if (var_shoulddisplayattr14) {
+                        out.write(" src");
+                        {
+                            boolean var_istrueattr13 = (var_attrvalue11.equals(true));
+                            if (!var_istrueattr13) {
+                                out.write("=\"");
+                                out.write(renderContext.getObjectModel().toString(var_attrcontent12));
+                                out.write("\"");
+                            }
+                        }
                     }
                 }
             }
         }
+        out.write("/>\n\t\t\t</div>");
     }
 }
-out.write("> \n\t\t\t<img class=\"cmp-recipe__image--img\"");
+out.write("\n\t\t\t<div class=\"cmp-recipe__image-name-date--name-date\">\n\t\t\t\t<div class=\"cmp-recipe__image-name-date--name-date__name\">\n\t\t\t\t\t");
 {
-    Object var_attrvalue18 = renderContext.getObjectModel().resolveProperty(_global_recipe, "imageReference");
-    {
-        Object var_attrcontent19 = renderContext.call("xss", var_attrvalue18, "uri");
+    Object var_testvariable15 = renderContext.getObjectModel().resolveProperty(_global_recipe, "name");
+    if (renderContext.getObjectModel().toBoolean(var_testvariable15)) {
+        out.write("<h4 class=\"cmp-recipe__image-name-date--name-date__name--text\">");
         {
-            boolean var_shoulddisplayattr21 = (((null != var_attrcontent19) && (!"".equals(var_attrcontent19))) && ((!"".equals(var_attrvalue18)) && (!((Object)false).equals(var_attrvalue18))));
-            if (var_shoulddisplayattr21) {
-                out.write(" src");
+            Object var_16 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "name"), "text");
+            out.write(renderContext.getObjectModel().toString(var_16));
+        }
+        out.write("</h4>");
+    }
+}
+out.write("\n\t\t\t\t</div>\n\t\t\t\t<div class=\"cmp-recipe__image-name-date--name-date__date\">\n\t\t\t\t\t");
+{
+    Object var_testvariable17 = renderContext.getObjectModel().resolveProperty(_global_recipe, "date");
+    if (renderContext.getObjectModel().toBoolean(var_testvariable17)) {
+        out.write("<h4 class=\"cmp-recipe__image-name-date--name-date__date--text\">");
+        {
+            Object var_18 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_recipe, "date"), "text");
+            out.write(renderContext.getObjectModel().toString(var_18));
+        }
+        out.write("</h4>");
+    }
+}
+out.write("\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"cmp-recipe__button\">");
+{
+    Object var_includedresult19 = renderContext.call("include", "button.html", obj());
+    out.write(renderContext.getObjectModel().toString(var_includedresult19));
+}
+out.write("</div>\n\t</div>\n\t\n\t");
+{
+    Object var_testvariable23 = renderContext.getObjectModel().resolveProperty(_global_recipe, "imageReference");
+    if (renderContext.getObjectModel().toBoolean(var_testvariable23)) {
+        out.write("<div class=\"cmp-recipe__image\">\n\t\t<a");
+        {
+            Object var_attrvalue24 = renderContext.getObjectModel().resolveProperty(_global_image, "link");
+            {
+                Object var_attrcontent25 = renderContext.call("xss", var_attrvalue24, "uri");
                 {
-                    boolean var_istrueattr20 = (var_attrvalue18.equals(true));
-                    if (!var_istrueattr20) {
-                        out.write("=\"");
-                        out.write(renderContext.getObjectModel().toString(var_attrcontent19));
-                        out.write("\"");
+                    boolean var_shoulddisplayattr27 = (((null != var_attrcontent25) && (!"".equals(var_attrcontent25))) && ((!"".equals(var_attrvalue24)) && (!((Object)false).equals(var_attrvalue24))));
+                    if (var_shoulddisplayattr27) {
+                        out.write(" href");
+                        {
+                            boolean var_istrueattr26 = (var_attrvalue24.equals(true));
+                            if (!var_istrueattr26) {
+                                out.write("=\"");
+                                out.write(renderContext.getObjectModel().toString(var_attrcontent25));
+                                out.write("\"");
+                            }
+                        }
                     }
                 }
             }
         }
+        out.write("> \n\t\t\t<img class=\"cmp-recipe__image--img\"");
+        {
+            Object var_attrvalue28 = renderContext.getObjectModel().resolveProperty(_global_recipe, "imageReference");
+            {
+                Object var_attrcontent29 = renderContext.call("xss", var_attrvalue28, "uri");
+                {
+                    boolean var_shoulddisplayattr31 = (((null != var_attrcontent29) && (!"".equals(var_attrcontent29))) && ((!"".equals(var_attrvalue28)) && (!((Object)false).equals(var_attrvalue28))));
+                    if (var_shoulddisplayattr31) {
+                        out.write(" src");
+                        {
+                            boolean var_istrueattr30 = (var_attrvalue28.equals(true));
+                            if (!var_istrueattr30) {
+                                out.write("=\"");
+                                out.write(renderContext.getObjectModel().toString(var_attrcontent29));
+                                out.write("\"");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        out.write("/>\n\t\t</a>\n\t</div>");
     }
 }
-out.write("/>\n\t\t</a>\n\t</div>\n</div>\n");
+out.write("\n</div>\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

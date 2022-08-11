@@ -1,3 +1,4 @@
+com\foodieland\core\models\Course.class
 com\foodieland\core\models\impl\CategoryImpl.class
 com\foodieland\core\schedulers\SimpleScheduledTask.class
 com\foodieland\core\models\package-info.class
@@ -7,6 +8,7 @@ com\foodieland\core\models\SimpleRecipe.class
 com\foodieland\core\schedulers\package-info.class
 com\foodieland\core\models\Category.class
 com\foodieland\core\models\impl\RecipeImpl.class
+com\foodieland\core\models\impl\CourseImpl.class
 com\foodieland\core\models\Recipe.class
 com\foodieland\core\listeners\SimpleResourceListener.class
 com\foodieland\core\schedulers\SimpleScheduledTask$Config.class

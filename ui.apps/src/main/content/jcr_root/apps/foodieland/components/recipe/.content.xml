@@ -5,7 +5,8 @@
 	    xmlns:jcr="http://www.jcp.org/jcr/1.0"
 	    
 	    jcr:primaryType="cq:Component"
-	    jcr:title="Recipe"
+	    jcr:title="Recipe Component"
 	    jcr:description="Displays the recipe's main information as a hero component."
 	    componentGroup="Foodieland Site - Content"
+	    sling:resourceSuperType="core/wcm/components/button/v2/button"
 	/>

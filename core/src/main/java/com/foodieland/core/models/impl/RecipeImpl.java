@@ -22,6 +22,8 @@ public class RecipeImpl implements Recipe {
 	@ValueMapValue
 	private String imageReference;
 	@ValueMapValue
+	private String imageAuthorReference;
+	@ValueMapValue
 	private String type;
 	@ValueMapValue
 	private String title;
@@ -81,6 +83,11 @@ public class RecipeImpl implements Recipe {
 	@Override
 	public String getImageReference() {
 		return imageReference;
+	}
+
+	@Override
+	public String getImageAuthorReference() {
+		return imageAuthorReference;
 	}
 
 }

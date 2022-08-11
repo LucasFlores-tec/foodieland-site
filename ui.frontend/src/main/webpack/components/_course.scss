@@ -1,0 +1,54 @@
+.cmp-course {
+	display: flex;
+	border-radius: 30px;
+	margin-left: 60px;
+	margin-right: 60px;
+	
+	.cmp-course__data-button {
+		padding-top: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+		
+		.cmp-course__title {
+			padding-bottom: 30px;
+		}
+		
+		.cmp-course__description {
+			padding-bottom: 30px;
+		}
+		
+		.cmp-course__button {
+			width: 180px;
+			height: 60px;
+			background: #000000;
+			border-radius: 16px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		.cmp-course__button--title {
+			width: 75px;
+			height: 17px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+		}
+	}
+	
+	.cmp-course__image {
+		width: 580px;
+		height: 500px;
+		background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+		border-radius: 30px;
+		padding-right: 50px;
+		padding-left: 50px;
+		padding-top: 90px;
+		
+		.cmp-course__image--img {
+			width: 550px;
+			height: 450px;
+		}
+	}
+	
+}
