@@ -1,5 +1,6 @@
 com\foodieland\core\models\Course.class
 com\foodieland\core\models\impl\CategoryImpl.class
+com\foodieland\core\models\Instagram.class
 com\foodieland\core\schedulers\SimpleScheduledTask.class
 com\foodieland\core\models\package-info.class
 com\foodieland\core\listeners\package-info.class
@@ -13,6 +14,7 @@ com\foodieland\core\models\Recipe.class
 com\foodieland\core\listeners\SimpleResourceListener.class
 com\foodieland\core\schedulers\SimpleScheduledTask$Config.class
 com\foodieland\core\filters\LoggingFilter.class
+com\foodieland\core\models\impl\InstagramImpl.class
 com\foodieland\core\models\impl\SimpleRecipeImpl.class
 com\foodieland\core\models\HelloWorldModel.class
 com\foodieland\core\servlets\SimpleServlet.class

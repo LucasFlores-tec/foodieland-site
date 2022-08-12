@@ -1,0 +1,18 @@
+<!--/* instagram.html */-->
+<div
+	class="cmp-instagram"
+	data-sly-use.instagram="com.foodieland.core.models.Instagram"
+	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+	data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button">
+	
+	<div class="cmp-instagram__image">
+		<a href="${image.link}"> 
+			<img src="${instagram.imagesReference}"/>
+		</a>
+	</div>
+	
+	<div class="cmp-instagram__button" data-sly-include="button.html">
+    	<span class="cmp-instagram__button--title" data-sly-test="${button.title}">${button.title}</span>
+	</div>
+
+</div>

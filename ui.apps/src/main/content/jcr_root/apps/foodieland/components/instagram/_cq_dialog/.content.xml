@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	
+	jcr:primaryType="nt:unstructured"
+	jcr:title="Simple Recipe Preview"
+	sling:resourceType="cq/gui/components/authoring/dialog">
+	
+	<content
+		jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/coral/foundation/container">
+		<items
+			jcr:primaryType="nt:unstructured">
+			<tabs
+				jcr:primaryType="nt:unstructured"
+				sling:resourceType="granite/ui/components/coral/foundation/tabs">
+				<items
+					jcr:primaryType="nt:unstructured">
+					<properties
+						jcr:primaryType="nt:unstructured"
+						sling:hideResource="{Boolean}false"
+						jcr:title="Button Properties"/>
+					<accessibility
+						jcr:primaryType="nt:unstructured"
+						sling:hideResource="{Boolean}true"/>
+					<cq:styles
+						jcr:primaryType="nt:unstructured"
+						sling:hideResource="{Boolean}true"/>
+					<fileProperties
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/coral/foundation/container"
+						jcr:title="File Properties">
+						<items
+							jcr:primaryType="nt:unstructured">
+							<columns
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+								<items
+									jcr:primaryType="nt:unstructured">
+									<column
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/container">
+										<items
+											jcr:primaryType="nt:unstructured">
+											<fileGroup
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+												fieldDescription="A list of the contributor's occupations."
+												fieldLabel="File Properties"
+												required="{Boolean}false">
+												<link 
+													jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/include"
+													path="/mnt/overlay/core/wcm/components/commons/editor/dialog/link/v1/link/edit/link"
+													fieldLabel="Link"
+													required="{Boolean}false"/>
+													
+												<image 
+													jcr:primaryType="nt:unstructured"
+													sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+													allowUpload="{Boolean}false" 
+													autoStart="{Boolean}false"
+													class="cq-droptarget" 
+													fieldLabel="Image Asset"
+													fileNameParameter="./imageName"
+													fileReferenceParameter="./imagesReference"
+													mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+													multiple="{Boolean}false" 
+													name="./image"
+													title="Upload Image Asset Simple Recipe" 
+													uploadUrl="${suffix.path}"
+													useHTML5="{Boolean}true" />
+											</fileGroup>
+										</items>
+									</column>
+								</items>
+							</columns>
+						</items>
+					</fileProperties>
+				</items>
+			</tabs>
+		</items>
+	</content>
+</jcr:root>
