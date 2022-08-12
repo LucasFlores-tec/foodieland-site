@@ -107,11 +107,11 @@ out.write("\n\t\n\t<div class=\"cmp-simplerecipe__timeandcategory\">\n\t\t");
 }
 out.write("\n\t\t");
 {
-    Object var_testvariable12 = renderContext.getObjectModel().resolveProperty(_global_simplerecipe, "selectCategory");
+    Object var_testvariable12 = renderContext.getObjectModel().resolveProperty(_global_simplerecipe, "category");
     if (renderContext.getObjectModel().toBoolean(var_testvariable12)) {
         out.write("<div class=\"cmp-simplerecipe__timeandcategory--category\">\n\t\t\t<p>");
         {
-            Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_simplerecipe, "selectCategory"), "text");
+            Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_simplerecipe, "category"), "text");
             out.write(renderContext.getObjectModel().toString(var_13));
         }
         out.write("</p>\n\t\t</div>");

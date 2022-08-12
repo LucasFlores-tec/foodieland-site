@@ -10,7 +10,16 @@ header.experiencefragment {
     
     //== Image
     .cmp-image {
-		padding-top: 15px;
+		padding: 15px;
+		top: 15px;
+	}
+	
+	//== Navigation
+	.cmp-navigation {
+	    float: left;
+	    padding: 15px;
+	    top: 15px;
+	    position: inherit;
 	}
     
     //== Separator

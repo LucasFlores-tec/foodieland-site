@@ -38,101 +38,6 @@
 										sling:resourceType="granite/ui/components/coral/foundation/container">
 										<items
 											jcr:primaryType="nt:unstructured">
-											<titleGroup
-												jcr:primaryType="nt:unstructured"
-												sling:resourceType="granite/ui/components/coral/foundation/well">
-												<items
-													jcr:primaryType="nt:unstructured">
-													<title
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                        fieldDescription="A title to display as the headline for the simple recipe component."
-                                                        fieldLabel="Title"
-                                                        name="./title"/>
-                                                    
-                                                    <titleType
-                                                        granite:hide="${!cqDesign.showTitleType}"
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                        fieldDescription="The heading HTML element used for the simple recipe's title type."
-                                                        fieldLabel="Heading Element"
-                                                        name="./titleType"
-                                                        ordered="{Boolean}true"
-                                                        wrapperClass="foundation-toggleable">
-                                                        <datasource
-                                                            jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="core/wcm/components/title/v1/datasource/allowedtypes"/>
-                                                    </titleType>
-                                                    
-                                                    <titleFromLinkedPage
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                                        checked="{Boolean}true"
-                                                        fieldDescription="When checked, populate the title with the linked page's title."
-                                                        name="./titleFromPage"
-                                                        text="Get title from linked page"
-                                                        uncheckedValue="{Boolean}false"
-                                                        value="{Boolean}true"/>
-												</items>
-											</titleGroup>
-											<tagGroup
-												jcr:primaryType="nt:unstructured"
-												sling:resourceType="granite/ui/components/coral/foundation/well">
-												<items
-													jcr:primaryType="nt:unstructured">
-													<time
-														jcr:primaryType="nt:unstructured"
-														sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-														fieldLabel="Time to Prepare"
-														name="./time"
-														required="{Boolean}true"/>
-												</items>
-											</tagGroup>
-											<categoryGroup
-												jcr:primaryType="nt:unstructured"
-												sling:resourceType="granite/ui/components/coral/foundation/well">
-												<items
-													jcr:primaryType="nt:unstructured">
-													<category
-														granite:class="cmp-form-options-source cq-dialog-dropdown-showhide"
-														jcr:primaryType="nt:unstructured"
-														sling:resourceType="granite/ui/components/coral/foundation/form/select"
-														fieldDescription="Set the category of the recipe."
-														fieldLabel="Select the Category"
-														name="./selectCategory">
-														<granite:data
-		                                                    jcr:primaryType="nt:unstructured"
-		                                                    cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
-														<items 
-															jcr:primaryType="nt:unstructured">
-						                                	<breakfast
-						                                		jcr:primaryType="nt:unstructure"
-						                                		text="Breakfast"
-						                                		value="breakfast"/>
-						                                	<vegan
-						                                		jcr:primaryType="nt:unstructure"
-						                                		text="Vegan"
-						                                		value="vegan"/>
-						                                	<meat
-						                                		jcr:primaryType="nt:unstructure"
-						                                		text="Meat"
-						                                		value="meat"/>
-						                                	<dessert
-						                                		jcr:primaryType="nt:unstructure"
-						                                		text="Dessert"
-						                                		value="dessert"/>
-						                                	<lunch
-						                                		jcr:primaryType="nt:unstructure"
-						                                		text="Lunch"
-						                                		value="lunch"/>
-						                                	<chocolate
-						                                		jcr:primaryType="nt:unstructure"
-						                                		text="Chocolate"
-						                                		value="chocolate"/>
-														</items>
-													</category>
-												</items>
-											</categoryGroup>
 											<imageGroup
 												jcr:primaryType="nt:unstructured"
 												sling:resourceType="granite/ui/components/coral/foundation/well">
@@ -160,6 +65,95 @@
 								                        useHTML5="{Boolean}true"/> 
 												</items>
 											</imageGroup>
+											<properties
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/well">
+												<items
+													jcr:primaryType="nt:unstructured">
+													<title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="A title to display as the headline for the simple recipe component."
+                                                        fieldLabel="Title"
+                                                        name="./title"/>
+                                                    
+                                                    <titleFromLinkedPage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldDescription="When checked, populate the title with the linked page's title."
+                                                        name="./titleFromPage"
+                                                        text="Get title from linked page"
+                                                        uncheckedValue="{Boolean}false"
+                                                        value="{Boolean}true"/>
+
+													<timeToPrepare
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														fieldLabel="Time to Prepare"
+														name="./time"
+														required="{Boolean}true"/>
+													
+													<selectCategory
+														granite:class="cmp-form-options-source cq-dialog-dropdown-showhide"
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/select"
+														fieldDescription="Set the category of the recipe."
+														fieldLabel="Select the Category"
+														name="./category">
+														<granite:data
+		                                                    jcr:primaryType="nt:unstructured"
+		                                                    cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
+														<items 
+															jcr:primaryType="nt:unstructured">
+						                                	<breakfast
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Breakfast"
+						                                		value="breakfast"/>
+						                                	<vegan
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Vegan"
+						                                		value="vegan"/>
+						                                	<meat
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Meat"
+						                                		value="meat"/>
+						                                	<dessert
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Dessert"
+						                                		value="dessert"/>
+						                                	<lunch
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Lunch"
+						                                		value="lunch"/>
+						                                	<chocolate
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Chocolate"
+						                                		value="chocolate"/>
+						                                	<snack
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Snack"
+						                                		value="snack"/>
+						                                	<fish
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Fish"
+						                                		value="fish"/>
+						                                	<healthy
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Healthy"
+						                                		value="healthy"/>
+						                                	<sweet
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Sweet"
+						                                		value="sweet"/>
+						                                	<noodles
+						                                		jcr:primaryType="nt:unstructured"
+						                                		text="Noodles"
+						                                		value="noodles"/>
+														</items>
+													</selectCategory>
+												</items>
+											</properties>
 										</items>
 									</column>
 								</items>

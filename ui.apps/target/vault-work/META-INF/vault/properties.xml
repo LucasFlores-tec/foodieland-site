@@ -4,7 +4,7 @@
 <comment>Foodieland Site - UI apps</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2022-08-10T19:32:14.320Z</entry>
+<entry key="created">2022-08-11T15:19:36.579Z</entry>
 <entry key="groupId">com.foodieland</entry>
 <entry key="name">foodieland-site.ui.apps</entry>
 <entry key="description">UI apps package for Foodieland Site</entry>
