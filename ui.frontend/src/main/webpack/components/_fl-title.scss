@@ -1,0 +1,34 @@
+.cmp-fltitle {
+	display: flex;
+	
+	.cmp-fltitle__title {
+		margin-left: 50px;
+	    margin-right: 50px;
+	    margin-top: 18px;
+	    margin-bottom: 18px;
+	    
+	    .h2 {
+			margin-top: 0px;
+		    margin-bottom: 0px;
+		}
+	}
+	
+	.cmp-fltitle__button {
+	    margin-right: 50px;
+	    margin-left: 785px;
+		width: 180px;
+		height: 60px;
+		background: #000000;
+		border-radius: 16px;
+		text-align: center;
+	}
+	
+	.cmp-fltitle__button--title {
+		width: 75px;
+		height: 17px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+	}
+}

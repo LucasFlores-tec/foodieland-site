@@ -21,7 +21,22 @@
 	}
 	
 	.cmp-simplerecipe__timeandcategory {
+		display: flex;
 		padding-right: 20px;
 		padding-left: 20px;
+		
+		.cmp-simplerecipe__timeandcategory--time {
+			margin-right: 20px;
+		    padding-top: 10px;
+		    padding-right: 10px;
+		    padding-bottom: 10px;
+		}
+		
+		.cmp-simplerecipe__timeandcategory--category {
+			padding-top: 10px;
+		    padding-right: 10px;
+		    padding-bottom: 10px;
+		    margin-left: 20px;
+		}
 	}
 }

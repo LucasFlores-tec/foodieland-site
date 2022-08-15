@@ -37,21 +37,7 @@ public class SimpleRecipeImpl implements SimpleRecipe {
 
 	@Override
 	public String getCategory() {
-		String choosenCategory = null;
-		switch(category) {
-		case "Breakfast": choosenCategory = "Breakfafst";
-		case "Vegan": choosenCategory = "Vegan";
-		case "Meat": choosenCategory = "Meat";
-		case "Dessert": choosenCategory = "Dessert";
-		case "Lunch": choosenCategory = "Lunch";
-		case "Chocolate": choosenCategory = "Chocolate";
-		case "Snack": choosenCategory = "Snack";
-		case "Fish": choosenCategory = "Fish";
-		case "Healthy": choosenCategory = "Healthy";
-		case "Sweet": choosenCategory = "Sweet";
-		case "Noodles": choosenCategory = "Noodles";
-		}
-		return choosenCategory;
+		return category;
 	}
 	
 	@Override

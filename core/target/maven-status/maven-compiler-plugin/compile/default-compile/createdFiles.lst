@@ -16,6 +16,8 @@ com\foodieland\core\schedulers\SimpleScheduledTask$Config.class
 com\foodieland\core\filters\LoggingFilter.class
 com\foodieland\core\models\impl\InstagramImpl.class
 com\foodieland\core\models\impl\SimpleRecipeImpl.class
+com\foodieland\core\models\impl\FlTitleImpl.class
+com\foodieland\core\models\FlTitle.class
 com\foodieland\core\models\HelloWorldModel.class
 com\foodieland\core\servlets\SimpleServlet.class
 com\foodieland\core\filters\package-info.class

@@ -40,7 +40,7 @@ Service-Component: OSGI-INF/com.foodieland.core.filters.LoggingFilter.
  -INF/com.foodieland.core.servlets.SimpleServlet.xml
 Sling-Model-Classes: com.foodieland.core.models.HelloWorldModel,com.fo
  odieland.core.models.impl.CategoryImpl,com.foodieland.core.models.imp
- l.CourseImpl,com.foodieland.core.models.impl.InstagramImpl,com.foodie
- land.core.models.impl.RecipeImpl,com.foodieland.core.models.impl.Simp
- leRecipeImpl
+ l.CourseImpl,com.foodieland.core.models.impl.FlTitleImpl,com.foodiela
+ nd.core.models.impl.InstagramImpl,com.foodieland.core.models.impl.Rec
+ ipeImpl,com.foodieland.core.models.impl.SimpleRecipeImpl
 
