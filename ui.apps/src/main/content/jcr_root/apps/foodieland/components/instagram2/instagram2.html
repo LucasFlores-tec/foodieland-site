@@ -1,8 +1,0 @@
-<!--/* instagram.html */-->
-<div class="cmp-instagram2" 
-	data-sly-use.embed="com.adobe.cq.wcm.core.components.models.Embed"
-    data-cmp-data-layer="${embed.data.json}">
-    <sly data-sly-test="${embed.html}">${embed.html @context = 'html'}</sly>
-    <sly data-sly-test="${embed.embeddableResourceType}"
-         data-sly-resource="${resource.path @ resourceType=embed.embeddableResourceType, wcmmode='disabled'}"></sly>
-</div>

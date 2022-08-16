@@ -1,7 +1,7 @@
 .cmp-navigation {
     padding: 15px;
-    float: left;
-	position: absolute;    
+	display: flex;
+    justify-content: center;
 }
 
 .cmp-navigation__group {

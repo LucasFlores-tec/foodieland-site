@@ -8,6 +8,9 @@
 		padding-top: 50px;
 		padding-left: 50px;
 		padding-right: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		
 		.cmp-course__title {
 			padding-bottom: 30px;
@@ -23,7 +26,9 @@
 			background: #000000;
 			border-radius: 16px;
 			text-align: center;
-			vertical-align: middle;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
 		}
 		
 		.cmp-course__button--title {

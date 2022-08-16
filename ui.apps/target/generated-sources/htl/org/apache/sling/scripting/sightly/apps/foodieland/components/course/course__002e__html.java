@@ -65,7 +65,7 @@ out.write("\r\n\t\t</div>\r\n\t\t<div class=\"cmp-course__data--description\">\r
         out.write("</p>");
     }
 }
-out.write("\r\n\t\t</div>\r\n\t\t\r\n\t\t<div class=\"cmp-course__button\">");
+out.write("\r\n\t\t</div>\r\n\t\t<div class=\"cmp-course__button\">");
 {
     Object var_includedresult4 = renderContext.call("include", "button.html", obj());
     out.write(renderContext.getObjectModel().toString(var_includedresult4));
