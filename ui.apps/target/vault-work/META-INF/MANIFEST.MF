@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: Foodieland Site - UI apps
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.foodieland:foodieland-site.ui.apps:0.0.1-SNAPSHO
+ T
+Content-Package-Description: UI apps package for Foodieland Site
+Content-Package-Roots: /apps/foodieland/clientlibs,/apps/foodieland/comp
+ onents,/apps/foodieland/i18n
+Import-Package: com.adobe.cq.wcm.core.components.models;version="[12.25.
+ 0,13.0.0)",com.foodieland.core.models;version="[1.1.0,2.0.0)",org.apach
+ e.sling.scripting.sightly;version="[2.0.0,3.0.0)"
+

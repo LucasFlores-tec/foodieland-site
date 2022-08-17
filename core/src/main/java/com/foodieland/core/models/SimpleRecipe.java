@@ -17,7 +17,12 @@ public interface SimpleRecipe {
 	String getCategory();
 	
 	/**
-	 * @return a String with the path to the image.
+	 * @return a String with the path to the image asset.
 	 */
 	String getImageReference();
+	
+	/**
+	 * @return a link URL to a page.
+	 */
+	String getLinkURL();
 }

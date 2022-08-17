@@ -109,47 +109,35 @@
 						                                	<breakfast
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Breakfast"
-						                                		value="breakfast"/>
+						                                		value="Breakfast"/>
 						                                	<vegan
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Vegan"
-						                                		value="vegan"/>
+						                                		value="Vegan"/>
 						                                	<meat
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Meat"
-						                                		value="meat"/>
-						                                	<dessert
-						                                		jcr:primaryType="nt:unstructured"
-						                                		text="Dessert"
-						                                		value="dessert"/>
-						                                	<lunch
-						                                		jcr:primaryType="nt:unstructured"
-						                                		text="Lunch"
-						                                		value="lunch"/>
-						                                	<chocolate
-						                                		jcr:primaryType="nt:unstructured"
-						                                		text="Chocolate"
-						                                		value="chocolate"/>
+						                                		value="Meat"/>
 						                                	<snack
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Snack"
-						                                		value="snack"/>
+						                                		value="Snack"/>
 						                                	<fish
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Fish"
-						                                		value="fish"/>
+						                                		value="Fish"/>
 						                                	<healthy
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Healthy"
-						                                		value="healthy"/>
+						                                		value="Healthy"/>
 						                                	<sweet
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Sweet"
-						                                		value="sweet"/>
+						                                		value="Sweet"/>
 						                                	<noodles
 						                                		jcr:primaryType="nt:unstructured"
 						                                		text="Noodles"
-						                                		value="noodles"/>
+						                                		value="Noodles"/>
 														</items>
 													</category>
 												</items>

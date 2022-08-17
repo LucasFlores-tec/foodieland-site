@@ -15,13 +15,14 @@ import com.foodieland.core.models.Category;
 )
 public class CategoryImpl implements Category {
 
-	protected static final String RESOURCE_TYPE = "foodieland/components/category";
+	protected static final String RESOURCE_TYPE = "foodieland/components/fl-category";
 
 	@ValueMapValue
 	private String name;
-	
 	@ValueMapValue
 	private String imageReference;
+	@ValueMapValue
+	private String linkURL;
 	
 	@Override
 	public String getName() {
@@ -31,6 +32,11 @@ public class CategoryImpl implements Category {
 	@Override
 	public String getImageReference() {
 		return imageReference;
+	}
+
+	@Override
+	public String getLinkURL() {
+		return linkURL;
 	}
 
 }

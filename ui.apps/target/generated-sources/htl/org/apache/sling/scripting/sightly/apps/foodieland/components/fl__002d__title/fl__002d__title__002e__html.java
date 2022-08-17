@@ -34,24 +34,24 @@ public final class fl__002d__title__002e__html extends RenderUnit {
                                 RenderContext renderContext) {
 // Main Template Body -----------------------------------------------------------------------------
 
-Object _global_fltitle = null;
+Object _global_model = null;
 Object _global_button = null;
 out.write("\r\n");
-_global_fltitle = renderContext.call("use", com.foodieland.core.models.FlTitle.class.getName(), obj());
+_global_model = renderContext.call("use", com.foodieland.core.models.Title.class.getName(), obj());
 _global_button = renderContext.call("use", com.adobe.cq.wcm.core.components.models.Button.class.getName(), obj());
-out.write("<div class=\"cmp-fltitle\">\r\n\t\r\n\t<div class=\"cmp-fltitle__title\">\r\n\t\t");
+out.write("<div class=\"cmp-fltitle\">\r\n\t\r\n\t");
 {
-    Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_global_fltitle, "title");
+    Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_global_model, "componentTitle");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("<h2>");
+        out.write("<div class=\"cmp-fltitle__title\">\r\n\t\t<h2 class=\"cmp-fltitle__title-text\">");
         {
-            Object var_1 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_fltitle, "title"), "text");
+            Object var_1 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "componentTitle"), "text");
             out.write(renderContext.getObjectModel().toString(var_1));
         }
-        out.write("</h2>");
+        out.write("</h2>\r\n\t</div>");
     }
 }
-out.write("\r\n\t</div>\r\n\t<div class=\"cmp-fltitle__button\">");
+out.write("\r\n\t<div class=\"cmp-fltitle__button\">");
 {
     Object var_includedresult2 = renderContext.call("include", "button.html", obj());
     out.write(renderContext.getObjectModel().toString(var_includedresult2));

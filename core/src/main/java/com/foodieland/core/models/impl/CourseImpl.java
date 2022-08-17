@@ -15,7 +15,7 @@ import com.foodieland.core.models.Course;
 )
 public class CourseImpl implements Course {
 
-	protected static final String RESOURCE_TYPE = "foodieland/components/course";
+	protected static final String RESOURCE_TYPE = "foodieland/components/fl-course";
 	
 	@ValueMapValue
 	private String title;
@@ -24,7 +24,7 @@ public class CourseImpl implements Course {
 	@ValueMapValue
 	private String imageReference;
 	@ValueMapValue
-	private String link;
+	private String linkURL;
 	
 	@Override
 	public String getTitle() {
@@ -42,8 +42,8 @@ public class CourseImpl implements Course {
 	}
 
 	@Override
-	public String getLink() {
-		return link;
+	public String getLinkURL() {
+		return linkURL;
 	}
 
 }

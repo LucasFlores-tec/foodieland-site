@@ -11,5 +11,10 @@ public interface Category {
 	 * @return a String with the path to the image.
 	 */
 	String getImageReference();
+	
+	/**
+	 * @return a link to a page.
+	 */
+	String getLinkURL();
 
 }

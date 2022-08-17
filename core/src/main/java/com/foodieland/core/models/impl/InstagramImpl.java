@@ -15,21 +15,21 @@ import com.foodieland.core.models.Instagram;
 		)
 public class InstagramImpl implements Instagram {
 
-	protected static final String RESOURCE_TYPE = "foodieland/components/instagram";
+	protected static final String RESOURCE_TYPE = "foodieland/components/fl-instagram";
 	
-	@ValueMapValue
-	private String link;
 	@ValueMapValue
 	private String imageReference;
+	@ValueMapValue
+	private String linkURL;
 	
-	@Override
-	public String getLink() {
-		return link;
-	}
-
 	@Override
 	public String getImageReference() {
 		return imageReference;
+	}
+
+	@Override
+	public String getLinkURL() {
+		return linkURL;
 	}
 
 }

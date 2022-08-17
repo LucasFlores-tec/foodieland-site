@@ -24,6 +24,8 @@ public class SimpleRecipeImpl implements SimpleRecipe {
 	private String time;
 	@ValueMapValue
 	private String category;
+	@ValueMapValue
+	private String linkURL;
 	
 	@Override
 	public String getTitle() {
@@ -43,6 +45,11 @@ public class SimpleRecipeImpl implements SimpleRecipe {
 	@Override
 	public String getImageReference() {
 		return imageReference;
+	}
+
+	@Override
+	public String getLinkURL() {
+		return linkURL;
 	}
 
 }

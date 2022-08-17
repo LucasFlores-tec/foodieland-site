@@ -1,11 +1,14 @@
 .cmp-category {
 	display: block;
-	width: 180px;
 	height: 202px;
 	background: linear-gradient(180deg, rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%);
 	border-radius: 30px;
-	margin-left: 20px;
-	margin-right: 20px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    margin-left: 35px;
 	
 	.cmp-category__image {
 		width: 100px;

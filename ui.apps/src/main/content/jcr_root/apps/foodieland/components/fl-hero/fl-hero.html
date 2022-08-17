@@ -1,0 +1,45 @@
+<!--/* recipe.html */-->
+<div class="cmp-recipe"
+	data-sly-use.model="com.foodieland.core.models.Hero"
+	data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button">
+	
+	<div class="cmp-recipe__data">
+		<div class="cmp-recipe__type" data-sly-test="${model.type}">
+			<h4 class="cmp-recipe__type--text">${model.type}</h4>
+		</div>
+		<div class="cmp-recipe__title" data-sly-test="${model.title}">
+			<h2 class="cmp-recipe__title--text">${model.title}</h2>
+		</div>
+		<div class="cmp-recipe__description" data-sly-test="${model.description}">
+			<p class="cmp-recipe__description--text">${model.description}</p>
+		</div>
+		<div class="cmp-recipe__time" data-sly-test="${model.time}">
+			<h4 class="cmp-recipe__time--text">${model.time}</h4>
+		</div>
+		<div class="cmp-recipe__ingredient" data-sly-test="${model.ingredient}">
+			<h4 class="cmp-recipe__ingredient--text">${model.ingredient}</h4>
+		</div>
+		<div class="cmp-recipe__image-name-date">
+			<div class="cmp-recipe__image-name-date--image" data-sly-test="${model.imageAuthorReference}">
+				<img class="cmp-recipe__image-name-date--image--author" src="${model.imageAuthorReference}"/>
+			</div>
+			<div class="cmp-recipe__image-name-date--name-date">
+				<div class="cmp-recipe__image-name-date--name-date__name" data-sly-test="${model.name}">
+					<h4 class="cmp-recipe__image-name-date--name-date__name--text">${model.name}</h4>
+				</div>
+				<div class="cmp-recipe__image-name-date--name-date__date" data-sly-test="${model.date}">
+					<h4 class="cmp-recipe__image-name-date--name-date__date--text">${model.date}</h4>
+				</div>
+			</div>
+		</div>
+		<div class="cmp-recipe__button" data-sly-include="button.html" data-sly-test="${button.title}">
+	    	<span class="cmp-recipe__button--title">${button.title}</span>
+		</div>
+	</div>
+	
+	<div class="cmp-recipe__image" data-sly-test="${model.linkURL}" data-sly-test="${model.imageReference}">
+		<a href="${model.linkURL}"> 
+			<img class="cmp-recipe__image--img" src="${model.imageReference}"/>
+		</a>
+	</div>
+</div>

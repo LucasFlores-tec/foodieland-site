@@ -1,0 +1,28 @@
+<!--/* course.html */-->
+<div class="cmp-course"
+	data-sly-use.model="com.foodieland.core.models.Course"
+	data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+	data-sly-test="${model.title}"
+	data-sly-test="${model.description}"
+	data-sly-test="${button.title}"
+	data-sly-test="${model.linkURL}"
+	data-sly-test="${model.imageReference}">
+	
+	<div class="cmp-course__data-button">
+		<div class="cmp-course__data--title">
+			<h2>${model.title}</h2>
+		</div>
+		<div class="cmp-course__data--description">
+			<p>${model.description}</p>
+		</div>
+		<div class="cmp-course__button" data-sly-include="button.html">
+		    <span class="cmp-course__button--title">${button.title}</span>
+		</div>
+	</div>
+	
+	<div class="cmp-course__image">
+		<a href="${model.linkURL}">
+			<img class="cmp-course__image--img" src="${model.imageReference}"/>
+		</a>
+	</div>
+</div>

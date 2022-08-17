@@ -1,24 +1,12 @@
 .cmp-recipe {
 	display: flex;
-	padding-left: 25px;
-	margin-left: 65px;
+	margin-left: 4%;
+	margin-right: 5%;
+	padding-left: 30px;
 	width: 90%;
-	height: 500px;
+	height: 640px;
 	background: #E7FAFE;
 	border-radius: 30px;
-	align-self: center;
-	
-	.cmp-recipe__image-name-date--image {
-	    width: 100px;
-   		align-self: center;
-	    
-		.cmp-recipe__image-name-date--image--author {
-			width: 70px;
-			height: 70px;
-			background: url(.png);
-			border-radius: 70px;
-		}
-	}
 	
 	.cmp-recipe__button {
 		width: 180px;
@@ -39,22 +27,48 @@
 		font-size: 14px;
 	}
 	
-	.cmp-recipe__image--img {
-			height: 500px;
+	.cmp-recipe__image {
+		width: 50%;
+		height: 640px;
+		justify-content: center;
+		align-items: center;
+		padding-left: 50px;
+		
+		.cmp-recipe__image--img {
+			width: 100%;
+			height: 640px;
 			border-bottom-right-radius: 30px;
 		    border-top-right-radius: 30px;
+		}
 	}
-		
+	
 	.cmp-recipe__data {
-		padding-right: 60px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		
 		.cmp-recipe__image-name-date {
 			display: flex;
 			
 			.cmp-recipe__image-name-date--name-date {
 				width: 300px;
-				display: block;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 		}
+		
+		.cmp-recipe__image-name-date--image {
+	    width: 100px;
+   		align-self: center;
+	    
+			.cmp-recipe__image-name-date--image--author {
+				width: 70px;
+				height: 70px;
+				background: url(.png);
+				border-radius: 70px;
+			}
+		}	
 	}
 }

@@ -1,25 +1,24 @@
 <!--/* simplerecipe.html */-->
 <div
 	class="cmp-simplerecipe"
-	data-sly-use.simplerecipe="com.foodieland.core.models.SimpleRecipe"
-	data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image">
+	data-sly-use.model="com.foodieland.core.models.SimpleRecipe">
 	
 	<div class="cmp-simplerecipe__image">
-		<a href="${image.link}"> 
-			<img src="${simplerecipe.imageReference}"/>
+		<a href="${model.linkURL}"> 
+			<img src="${model.imageReference}"/>
 		</a>
 	</div>
 	
-	<div class="cmp-simplerecipe__title" data-sly-test="${simplerecipe.title}">
-		<h4 class="cmp-simplerecipe__title-sr">${simplerecipe.title}</h4>
+	<div class="cmp-simplerecipe__title" data-sly-test="${model.title}">
+		<h4 class="cmp-simplerecipe__title-sr">${model.title}</h4>
 	</div>
 	
 	<div class="cmp-simplerecipe__timeandcategory">
-		<div class="cmp-simplerecipe__timeandcategory--time" data-sly-test="${simplerecipe.time}">
-			<p>${simplerecipe.time}</p>
+		<div class="cmp-simplerecipe__timeandcategory--time" data-sly-test="${model.time}">
+			<p>${model.time}</p>
 		</div>
-		<div class="cmp-simplerecipe__timeandcategory--category" data-sly-test="${simplerecipe.category}">
-			<p>${simplerecipe.category}</p>
+		<div class="cmp-simplerecipe__timeandcategory--category" data-sly-test="${model.category}">
+			<p>${model.category}</p>
 		</div>
 	</div>
 </div>

@@ -1,10 +1,10 @@
 <!--/* fl-title.html */-->
 <div class="cmp-fltitle"
-	data-sly-use.fltitle="com.foodieland.core.models.FlTitle"
+	data-sly-use.model="com.foodieland.core.models.Title"
 	data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button">
 	
-	<div class="cmp-fltitle__title">
-		<h2 data-sly-test="${fltitle.title}">${fltitle.title}</h2>
+	<div class="cmp-fltitle__title" data-sly-test="${model.componentTitle}">
+		<h2 class="cmp-fltitle__title-text">${model.componentTitle}</h2>
 	</div>
 	<div class="cmp-fltitle__button" data-sly-include="button.html">
     	<span class="cmp-fltitle__button--title" data-sly-test="${button.title}">${button.title}</span>
