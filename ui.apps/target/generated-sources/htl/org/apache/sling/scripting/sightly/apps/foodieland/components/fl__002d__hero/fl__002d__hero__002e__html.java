@@ -151,19 +151,12 @@ out.write("\n\t\t\t\t");
         out.write("</h4>\n\t\t\t\t</div>");
     }
 }
-out.write("\n\t\t\t</div>\n\t\t</div>\n\t\t");
+out.write("\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"cmp-recipe__button\">");
 {
-    Object var_testvariable19 = renderContext.getObjectModel().resolveProperty(_global_button, "title");
-    if (renderContext.getObjectModel().toBoolean(var_testvariable19)) {
-        out.write("<div class=\"cmp-recipe__button\">");
-        {
-            Object var_includedresult20 = renderContext.call("include", "button.html", obj());
-            out.write(renderContext.getObjectModel().toString(var_includedresult20));
-        }
-        out.write("</div>");
-    }
+    Object var_includedresult19 = renderContext.call("include", "button.html", obj());
+    out.write(renderContext.getObjectModel().toString(var_includedresult19));
 }
-out.write("\n\t</div>\n\t\n\t");
+out.write("</div>\n\t</div>\n\t\n\t");
 {
     Object var_testvariable23 = renderContext.getObjectModel().resolveProperty(_global_model, "imageReference");
     if (renderContext.getObjectModel().toBoolean(var_testvariable23)) {

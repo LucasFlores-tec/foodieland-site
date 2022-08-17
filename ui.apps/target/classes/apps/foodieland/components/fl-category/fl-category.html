@@ -1,0 +1,14 @@
+<!--/* category.html */-->
+<div class="cmp-category"
+	data-sly-use.model="com.foodieland.core.models.Category">
+	
+	<div class="cmp-category__image" data-sly-test="${model.imageReference}">
+		<a data-sly-test="${model.linkURL}" href="${model.linkURL}">
+			<img src="${model.imageReference}"/>
+		</a>
+	</div>
+	
+	<div class="cmp-category__name" data-sly-test="${model.name}">
+		<p class="cmp-category__name-category">${model.name}</p>
+	</div>
+</div>

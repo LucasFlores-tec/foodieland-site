@@ -1,12 +1,10 @@
 <!--/* instagram.html */-->
 <div
 	class="cmp-instagram"
-	data-sly-use.model="com.foodieland.core.models.Instagram"
-	data-sly-test="${model.linkURL}"
-	data-sly-test="${model.imageReference}">
+	data-sly-use.model="com.foodieland.core.models.Instagram">
 	
-	<div class="cmp-instagram__image">
-		<a href="${model.linkURL}"> 
+	<div class="cmp-instagram__image" data-sly-test="${model.imageReference}">
+		<a data-sly-test="${model.linkURL}" href="${model.linkURL}"> 
 			<img src="${model.imageReference}"/>
 		</a>
 	</div>

@@ -36,6 +36,9 @@ public class CategoryImpl implements Category {
 
 	@Override
 	public String getLinkURL() {
+		if(linkURL != null) {
+			linkURL = linkURL.concat(".html");
+		}
 		return linkURL;
 	}
 
