@@ -72,6 +72,9 @@ public class HeroImpl implements Hero {
 
 	@Override
 	public String getLinkURL() {
+		if(linkURL != null){
+			linkURL = linkURL.concat(".html");
+		}
 		return linkURL;
 	}
 

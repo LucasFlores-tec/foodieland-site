@@ -22,7 +22,7 @@ public interface SimpleRecipe {
 	String getImageReference();
 	
 	/**
-	 * @return a link URL to a page.
+	 * @return a String with a link URL to a page.
 	 */
 	String getLinkURL();
 }

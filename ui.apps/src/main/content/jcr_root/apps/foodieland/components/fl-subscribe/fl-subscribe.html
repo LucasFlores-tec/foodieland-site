@@ -1,0 +1,19 @@
+<!--/* subscription.html */-->
+<div class="cmp-subscribe"
+	data-sly-use.model="com.foodieland.core.models.Subscribe">
+	
+	<div class="cmp-subscribe__title">
+		<h2 class="cmp-subscribe__title--text">${model.title}</h2>
+	</div>
+	
+	<div class="cmp-subscribe__description">
+		<p class="cmp-subscribe__description--text">${model.description}</p>
+	</div>
+	
+	<div class="cmp-subscribe__email">
+		<form class="cmp-subscribe__email--form" action="/test-components.html">
+			<input class="cmp-subscribe__email--text" type="text" value="Your email address...">
+			<input class="cmp-subscribe__email--button" type="submit" value="Subscribe">
+		</form>
+	</div>
+</div>

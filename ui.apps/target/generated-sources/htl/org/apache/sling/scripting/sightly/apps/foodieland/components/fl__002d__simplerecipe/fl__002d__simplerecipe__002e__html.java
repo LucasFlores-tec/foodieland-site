@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  ******************************************************************************/
-package org.apache.sling.scripting.sightly.apps.foodieland.components.simplerecipe;
+package org.apache.sling.scripting.sightly.apps.foodieland.components.fl__002d__simplerecipe;
 
 import java.io.PrintWriter;
 import java.util.Collection;
@@ -25,7 +25,7 @@ import javax.script.Bindings;
 import org.apache.sling.scripting.sightly.render.RenderUnit;
 import org.apache.sling.scripting.sightly.render.RenderContext;
 
-public final class simplerecipe__002e__html extends RenderUnit {
+public final class fl__002d__simplerecipe__002e__html extends RenderUnit {
 
     @Override
     protected final void render(PrintWriter out,

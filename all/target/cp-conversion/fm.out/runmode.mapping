@@ -1,5 +1,5 @@
 #File edited by the Apache Sling Content Package to Sling Feature converter
-#Wed Aug 17 17:41:49 GFT 2022
+#Thu Aug 18 16:06:22 GFT 2022
 author=foodieland-site.all-author.json
 publish=foodieland-site.all-publish.json
 (default)=foodieland-site.all.json

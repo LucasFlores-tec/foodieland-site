@@ -42,5 +42,7 @@ Sling-Model-Classes: com.foodieland.core.models.HelloWorldModel,com.fo
  odieland.core.models.impl.CategoryImpl,com.foodieland.core.models.imp
  l.CourseImpl,com.foodieland.core.models.impl.HeroImpl,com.foodieland.
  core.models.impl.InstagramImpl,com.foodieland.core.models.impl.Simple
- RecipeImpl,com.foodieland.core.models.impl.TitleImpl
+ RecipeImpl,com.foodieland.core.models.impl.SimpleRecipeImpl2,com.food
+ ieland.core.models.impl.SubscribeImpl,com.foodieland.core.models.impl
+ .TitleImpl
 

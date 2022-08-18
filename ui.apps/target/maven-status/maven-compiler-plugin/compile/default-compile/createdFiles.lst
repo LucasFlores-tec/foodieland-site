@@ -1,12 +1,14 @@
+org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__simplerecipe\fl__002d__simplerecipe__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\helloworld\helloworld__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__hero\fl__002d__hero__002e__html.class
+org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__simplerecipe2\fl__002d__simplerecipe2__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\page\customheaderlibs__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__title\fl__002d__title__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\page\customfooterlibs__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\xfpage\content__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__instagram\fl__002d__instagram__002e__html.class
-org\apache\sling\scripting\sightly\apps\foodieland\components\simplerecipe\simplerecipe__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__category\fl__002d__category__002e__html.class
+org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__subscribe\fl__002d__subscribe__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\xfpage\customheaderlibs__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\fl__002d__course\fl__002d__course__002e__html.class
 org\apache\sling\scripting\sightly\apps\foodieland\components\xfpage\customfooterlibs__002e__html.class

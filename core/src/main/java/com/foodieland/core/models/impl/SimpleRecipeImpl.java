@@ -14,7 +14,7 @@ import com.foodieland.core.models.SimpleRecipe;
 )
 public class SimpleRecipeImpl implements SimpleRecipe {
 	
-	protected static final String RESOURCE_TYPE = "foodieland/components/simplerecipe";
+	protected static final String RESOURCE_TYPE = "foodieland/components/fl-simplerecipe";
 	
 	@ValueMapValue
 	private String imageReference;
@@ -49,6 +49,9 @@ public class SimpleRecipeImpl implements SimpleRecipe {
 
 	@Override
 	public String getLinkURL() {
+		if(linkURL != null){
+			linkURL = linkURL.concat(".html");
+		}
 		return linkURL;
 	}
 

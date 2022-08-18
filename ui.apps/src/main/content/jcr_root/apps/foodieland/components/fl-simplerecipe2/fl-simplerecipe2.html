@@ -1,0 +1,24 @@
+<!--/* simplerecipe.html */-->
+<div
+	class="cmp-simplerecipe2"
+	data-sly-use.model="com.foodieland.core.models.SimpleRecipe2">
+	
+	<div class="cmp-simplerecipe2__image">
+		<a href="${model.linkURL}"> 
+			<img src="${model.imageReference}"/>
+		</a>
+	</div>
+	
+	<div class="cmp-simplerecipe2__title" data-sly-test="${model.title}">
+		<h4 class="cmp-simplerecipe2__title-sr">${model.title}</h4>
+	</div>
+	
+	<div class="cmp-simplerecipe2__timeandcategory">
+		<div class="cmp-simplerecipe2__timeandcategory--time" data-sly-test="${model.time}">
+			<p>${model.time}</p>
+		</div>
+		<div class="cmp-simplerecipe2__timeandcategory--category" data-sly-test="${model.category}">
+			<p>${model.category}</p>
+		</div>
+	</div>
+</div>

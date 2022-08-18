@@ -1,0 +1,77 @@
+.cmp-subscribe {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 442px;
+    margin: 65px;
+    left: 80px;
+    top: 6143px;
+    background: #E7F9FD;
+    border-radius: 60px;
+    align-self: center;
+    
+    .cmp-subscribe__title--text {
+	    font-family: 'Inter';
+	    font-style: normal;
+	    font-weight: 600;
+	    font-size: 48px;
+	    line-height: 58px;
+	    letter-spacing: -0.04em;
+	    color: #000000;
+	}
+	
+	.cmp-subscribe__description--text {
+		font-family: 'Inter';
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 16px;
+	    line-height: 28px;
+	    text-align: center;
+	    color: rgba(0, 0, 0, 0.6);
+	    margin-bottom: 25px;
+	}
+	
+	.cmp-subscribe__email {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 480px;
+	    height: 80px;
+	    left: 480px;
+	    top: 6425px;
+	    background: #FFFFFF;
+	    border-radius: 24px;
+	    
+	    .cmp-subscribe__email--text {
+			border: white;
+		    font-family: 'Inter';
+		    font-style: normal;
+		    font-weight: 500;
+		    font-size: 18px;
+		    line-height: 17px;
+		    letter-spacing: -0.02em;
+		    color: rgba(0, 0, 0, 0.4);
+		}
+		
+		.cmp-subscribe__email--button {
+			border: white;
+		    width: 160px;
+		    height: 60px;
+		    left: 790px;
+		    top: 6435px;
+		    background: #000000;
+		    border-radius: 16px;
+		    font-family: 'Inter';
+		    font-style: normal;
+		    font-weight: 600;
+		    font-size: 14px;
+		    line-height: 17px;
+		    letter-spacing: -0.02em;
+		    color: #FFFFFF;
+		}
+	    
+	}
+    
+}

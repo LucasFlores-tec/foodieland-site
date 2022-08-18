@@ -5,7 +5,7 @@
 		xmlns:jcr="http://www.jcp.org/jcr/1.0"
 		
 		jcr:primaryType="cq:Component"
-		jcr:title="Simple Recipe Preview"
+		jcr:title="Simple Recipe 2 - Foodieland Component"
 		jcr:description="Displays a preview of the recipe under Simple and tasty recipes section."
 		componentGroup="Foodieland Site - Content"
 	/>
